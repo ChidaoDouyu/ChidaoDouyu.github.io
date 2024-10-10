@@ -15,7 +15,7 @@ export default sidebar({
       icon: "book",
       prefix: "posts/",
       children: [
-        "Culture"
+        { text:"高中政治", link: "Politics"}
       ],
     },
     "intro",
