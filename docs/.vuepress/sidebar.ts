@@ -8,7 +8,7 @@ export default sidebar({
       icon: "book",
       prefix: "posts/",
       children: [
-        { text: "高中文化课",link: "cultrue/", prefix: "cultrue/",children: [
+        { text: "高中文化课",link: "culture/", prefix: "culture/",children: [
           { text: "数学", link: "maths"},
           { text: "语文", link: "chinese"},
           { text: "英语", link: "english"},
