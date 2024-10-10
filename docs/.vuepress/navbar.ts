@@ -10,9 +10,9 @@ export default navbar([
       {
         text: "高中文化课",
         icon: "pen-to-square",
-        prefix: "Culture/",
+        prefix: "culture/",
         children:[
-          "Politics"
+          "politics"
         ],
       },
     ],

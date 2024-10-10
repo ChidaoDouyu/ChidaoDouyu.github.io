@@ -4,25 +4,21 @@ export default sidebar({
   "/": [
     "",
     {
-      text: "如何使用",
-      icon: "laptop-code",
-      prefix: "demo/",
-      link: "demo/",
-      children: "structure",
-    },
-    {
       text: "文章",
       icon: "book",
       prefix: "posts/",
       children: [
-        { text:"高中政治", link: "Politics"}
+        { text: "高中文化课",link: "cultrue/", prefix: "cultrue/",children: [
+          { text: "数学", link: "maths"},
+          { text: "语文", link: "chinese"},
+          { text: "英语", link: "english"},
+          { text: "物理", link: "physics"},
+          { text: "化学", link: "chemistry"},
+          { text: "思想政治", link: "politics"}
+        ]}
+        
       ],
     },
-    "intro",
-    {
-      text: "幻灯片",
-      icon: "person-chalkboard",
-      link: "https://ecosystem.vuejs.press/zh/plugins/markdown/revealjs/demo.html",
-    },
+    "intro"
   ],
 });
