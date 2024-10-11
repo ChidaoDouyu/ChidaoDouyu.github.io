@@ -12,7 +12,7 @@ export default navbar([
         icon: "pen-to-square",
         prefix: "culture/",
         children:[
-          "politics"
+          {text: "思想政治", link: "politics/"}
         ],
       },
     ],
