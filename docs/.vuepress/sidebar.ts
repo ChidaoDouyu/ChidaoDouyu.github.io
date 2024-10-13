@@ -25,6 +25,7 @@ export default sidebar({
     "/",
     {text: "高中文化课",link: "/posts/culture/"},
     "",
+    {text: "必修二 经济与社会", link: "formal2"},
     {text: "必修三 政治与法治", link: "formal3"}
   ]
 });
