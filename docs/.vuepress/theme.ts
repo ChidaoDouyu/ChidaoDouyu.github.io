@@ -4,16 +4,16 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://mister-hope.github.io",
+  hostname: "https://ChidaoDouyu.github.io",
 
   author: {
     name: "ChidaoDouyu",
-    url: "https://mister-hope.com",
+    url: "https://github.com/ChidaoDouyu",
   },
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "logo.jpg",
 
   repo: "ChidaoDouyu/ChidaoDouyu.github.io",
 
@@ -29,6 +29,12 @@ export default hopeTheme({
   footer: "默认页脚",
   displayFooter: true,
   license: "CC BY-NC-ND 4.0 ",
+
+  // 文章结尾显示贡献信息
+  lastUpdated: true,
+  contributors: true,
+  editLink: true,
+
 
   // 博客相关
   blog: {
@@ -91,6 +97,8 @@ export default hopeTheme({
   // 在这里配置主题提供的插件
   plugins: {
     blog: true,
+
+    photoSwipe: false,
 
     markdownHint:{
       alert: true
