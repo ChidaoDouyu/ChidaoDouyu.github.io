@@ -27,5 +27,10 @@ export default sidebar({
     "",
     {text: "必修二 经济与社会", link: "formal2"},
     {text: "必修三 政治与法治", link: "formal3"}
-  ]
+  ],
+  "/posts/webbuild/":[
+    "/",
+    "",
+    {text: "Vuepress-Theme-Hope", link:"vuepressthemehope"}
+  ],
 });

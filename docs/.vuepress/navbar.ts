@@ -15,6 +15,10 @@ export default navbar([
           {text: "思想政治", link: "politics/"}
         ],
       },
+      {
+        text: "网站搭建经验",
+        link: "webbuild/"
+      },
     ],
   }
 ]);

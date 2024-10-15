@@ -104,12 +104,14 @@ export default hopeTheme({
       alert: true
     },
 
-    // 启用之前需安装 @waline/client
-    // 警告: 这是一个仅供演示的测试服务，在生产环境中请自行部署并使用自己的服务！
-    // comment: {
-    //   provider: "Waline",
-    //   serverURL: "https://waline-comment.vuejs.press",
-    // },
+
+    comment: {
+      provider: "Giscus",
+      repo: "ChidaoDouyu/ChidaoDouyu.github.io",
+      repoId: "R_kgDOM90dcw",
+      category: "Announcements",
+      categoryId: "DIC_kwDOM90dc84CjY2L",
+    },
 
     components: {
       components: ["Badge", "VPCard"],
