@@ -1,3 +1,6 @@
+
+
+
 # Git基本工作流程
 
 1. git pull
@@ -15,4 +18,4 @@
 
 8. git push \<remote-name> \<branch> // 推送本地库至云端库
 
-9. 访问远程项目库提出 Pull Request 以合并至主分支
+9. 若需合并至其他分支，请访问远程项目库提出 Pull Request
