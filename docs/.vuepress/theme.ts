@@ -30,11 +30,7 @@ export default hopeTheme({
   displayFooter: true,
   license: "CC BY-NC-ND 4.0 ",
 
-  // 文章结尾显示贡献信息
-  lastUpdated: true,
-  contributors: true,
-  editLink: true,
-
+  pageInfo: ["Author", "Date", "Word", "Category", "Tag", "ReadingTime"],
 
   // 博客相关
   blog: {
@@ -97,6 +93,9 @@ export default hopeTheme({
   // 在这里配置主题提供的插件
   plugins: {
     blog: true,
+  
+    // 文章结尾显示页面元信息
+    git: true,
 
     photoSwipe: false,
 
