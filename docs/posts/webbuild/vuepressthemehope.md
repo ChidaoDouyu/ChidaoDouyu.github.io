@@ -1,39 +1,43 @@
 # Vuepress-Theme-Hope 搭建记录
 
-## 初始化流程
+## 项目初始化
+
 >[!info]
 >本文仅供有一定代码基础的学习者！
->遇见不懂的指令请自行查询用法或意义
+>遇见不懂的指令请自行搜索
 
-提前下载pnpm git (教程自行寻找)
+### 创建项目
 
-mkdir \<new-proj> // 可自定义目录名
+1. 环境：pnpm git
+
+2. mkdir \<new-proj> // 可自定义目录名
 cd \<new-proj>
 
-git init // 初始化git项目
+3. git init // 初始化git项目
 pnpm init // 初始化pnpm项目
 
-pnpm -i -D vue vuepress@next vuepress-theme-hope sass-embedded // 使用 `-i` 参数下载依赖包 使用 `-D` 参数标记为"依赖"以保证项目可移动
+4. pnpm -i -D vue vuepress@next vuepress-theme-hope sass-embedded // 使用 `-i` 参数下载依赖包 使用 `-D` 参数标记为"依赖"以保证项目可移动
 
-vi .gitignore // 添加.gitignore文件
-写入以下内容
+5. vi .gitignore // 添加.gitignore文件
+写入以下内容 // 注意：将\<docs>替换为项目文件根目录 默认为src
 ```
 <docs>/.temp
 <docs>/.cache
 <docs>/dist
 node-modules
 ```
-// 注意：将\<docs>替换为项目文件根目录 默认为src
 
 
-pnpm create vuepress-theme-hope \<new-proj> //可自定义项目名
 
->[!note]
->如果选择立即启动开发服务器，请在本地浏览器访问http://localhost:8080
->后续开发以及项目介绍请看[项目命令](https://theme-hope.vuejs.press/zh/get-started/command.html)
+6. pnpm create vuepress-theme-hope \<new-proj> //可自定义项目名
+
+7. 项目初始化成功！
+如果选择立即启动开发服务器，请在本地浏览器访问http://localhost:8080
+后续开发以及项目介绍请看[项目命令](https://theme-hope.vuejs.press/zh/get-started/command.html)
 
 
-## 添加自动构建部署文件
+
+### 添加自动构建部署文件
 
 >[!info]
 >以github github-pages为例
@@ -108,6 +112,55 @@ jobs:
 
 >[!info]
 >请参考 [Github Pages 官方指南](https://pages.github.com/) 以获取更多信息
+
+### 默认配置文件
+
+- 目录：\<docs>/.vuepress/*.ts
+- 结构：
+  config.ts
+  ```
+  import theme from "./theme.js"
+  ```
+  theme.ts 
+  ```
+  import navbar from "./navbar.js";
+  import sidebar from "./sidebar.js"
+  ```
+- 配置方法：
+在`theme.ts`中配置 **除navbar和sidebar外** 的主题配置
+在`navbar.ts`中配置导航栏配置
+在`sidebar.ts`中配置侧边栏配置
+
+## 侧边栏开发
+
+- 默认配置文件目录：\<docs>/.vuepress/sidebar.ts
+- 结构：
+```ts
+export default sidebar({
+  "/": [ // "/"指在所有页面显示该侧边栏(可被其他配置覆盖)
+    "", // 主页
+    {
+      text: "文章", // 配置显示文本
+      icon: "", // 可选，配置图标
+      prefix: "articles/" // 配置前缀，写目录名即可
+      children: [
+        {text: "文章1",link: "article1"} // 索引至article1.md
+      ]
+    },
+    {text: "自我介绍",link: "intro/"} // 在link后加/将索引至该目录主页(index或readme)
+  ]
+  "culture/": [ // "culture/"指在culture目录下显示该侧边栏
+    "", // 主页
+    "/", // culture目录主页
+    {...}
+  ]
+})
+```
+
+## 导航栏开发
+
+- 默认配置文件目录：\<docs>/.vuepress/navbar.ts
+
 
 
 ## 更多信息
