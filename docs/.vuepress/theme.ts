@@ -76,11 +76,11 @@ export default hopeTheme({
   },
 
   // 加密配置
-  encrypt: {
-    config: {
-      "/demo/encrypt.html": ["1234"],
-    },
-  },
+  // encrypt: {
+  //   config: {
+  //     "/demo/encrypt.html": ["1234"],
+  //   },
+  // },
 
   // 多语言配置
   metaLocales: {
@@ -107,10 +107,20 @@ export default hopeTheme({
       license: "CC BY-NC-ND 4.0"
     },
 
-    photoSwipe: false,
+    // 关闭图片预览
+    // photoSwipe: false,
 
     markdownHint:{
       alert: true
+    },
+
+    // 自动生成目录
+    catalog: {
+      frontmatter: (path) => ({
+        pageInfo: false,
+        lastUpdated: false,
+        comment: false
+      })
     },
 
 
