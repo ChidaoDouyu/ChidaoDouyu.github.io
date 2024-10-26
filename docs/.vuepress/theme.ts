@@ -92,7 +92,9 @@ export default hopeTheme({
 
   // 在这里配置主题提供的插件
   plugins: {
-    blog: true,
+    blog: {
+      excerptLength: 0
+    },
   
     // 文章结尾显示页面元信息
     git: true,
