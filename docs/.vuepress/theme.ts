@@ -99,6 +99,14 @@ export default hopeTheme({
     // 文章结尾显示页面元信息
     git: true,
 
+    // 复制自动添加CopyRight信息
+    copyright: {
+      global: true,
+      triggerLength: 0,
+      author: "ChidaoDouyu",
+      license: "CC BY-NC-ND 4.0"
+    },
+
     photoSwipe: false,
 
     markdownHint:{
