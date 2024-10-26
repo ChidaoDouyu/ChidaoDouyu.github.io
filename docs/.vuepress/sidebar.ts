@@ -8,13 +8,16 @@ export default sidebar({
       icon: "book",
       prefix: "posts/",
       children: [
-        { text: "高中文化课", prefix: "culture/", children: [
+        { text: "高中文化课", prefix: "culture/", link: "culture/", children: [
           { text: "数学", link: "maths/"},
           { text: "语文", link: "chinese/"},
           { text: "英语", link: "english/"},
           { text: "物理", link: "physics/"},
           { text: "化学", link: "chemistry/"},
           { text: "思想政治", link: "politics/"}
+        ]},
+        { text: "网页搭建经验", prefix: "webbuild/", link: "webbuild/", children:[
+          {text: "Vuepress-Theme-Hope", link:"vuepressthemehope"}
         ]}
         
       ],
@@ -29,9 +32,9 @@ export default sidebar({
     {text: "必修三 政治与法治", link: "formal3"},
     {text: "必修四 哲学与文化", link: "formal4"}
   ],
-  "/posts/webbuild/":[
-    "/",
-    "",
-    {text: "Vuepress-Theme-Hope", link:"vuepressthemehope"}
-  ],
+  // "/posts/webbuild/":[
+  //   "/",
+  //   "",
+  //   {text: "Vuepress-Theme-Hope", link:"vuepressthemehope"}
+  // ],
 });
