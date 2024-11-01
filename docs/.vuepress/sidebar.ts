@@ -3,11 +3,7 @@ import { sidebar } from "vuepress-theme-hope";
 export default sidebar({
   "/": [
     "",
-    {
-      text: "文章",
-      icon: "book",
-      prefix: "posts/",
-      children: [
+    {text: "文章", icon: "book", prefix: "posts/", children: [
         { text: "高中文化课", prefix: "culture/", link: "culture/", children: [
           { text: "数学", link: "maths/"},
           { text: "语文", link: "chinese/"},
@@ -19,7 +15,6 @@ export default sidebar({
         { text: "网页搭建经验", prefix: "webbuild/", link: "webbuild/", children:[
           {text: "Vuepress-Theme-Hope", link:"vuepressthemehope"}
         ]}
-        
       ],
     },
     "intro"
