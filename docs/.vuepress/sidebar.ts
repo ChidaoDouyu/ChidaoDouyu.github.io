@@ -2,22 +2,22 @@ import { sidebar } from "vuepress-theme-hope";
 
 export default sidebar({
   "/": [
-    "",
-    {text: "文章", icon: "book", prefix: "posts/", children: [
-        { text: "高中文化课", prefix: "culture/", link: "culture/", children: [
-          { text: "数学", link: "maths/"},
-          { text: "语文", link: "chinese/"},
-          { text: "英语", link: "english/"},
-          { text: "物理", link: "physics/"},
-          { text: "化学", link: "chemistry/"},
-          { text: "思想政治", link: "politics/"}
-        ]},
-        { text: "网页搭建经验", prefix: "webbuild/", link: "webbuild/", children:[
-          {text: "Vuepress-Theme-Hope", link:"vuepressthemehope"}
-        ]}
-      ],
-    },
-    "intro"
+    {text: "主页", icon: "fas fa-home", link: "/"},
+    { text: "高中文化课", icon: "fas fa-book-open", prefix: "culture/", link: "culture/", children: [
+      { text: "数学", link: "maths/"},
+      { text: "语文", link: "chinese/"},
+      { text: "英语", link: "english/"},
+      { text: "物理", link: "physics/"},
+      { text: "化学", link: "chemistry/"},
+      { text: "思想政治", link: "politics/"}
+    ]},
+    { text: "网页搭建经验", icon: "fas fa-globe", prefix: "webbuild/", link: "webbuild/", children: [
+      {text: "Vuepress-Theme-Hope", link:"vuepressthemehope"}
+    ]},
+    { text: "计算机经验", icon: "fas fa-laptop", prefix: "computer/", link: "computer/", children: [
+      {text: "验机教程", link:"checknew"}
+    ]},
+    {text: "个人介绍", icon: "fas fa-circle-info",link: "intro"}
   ],
   "/posts/culture/politics/":[
     "/",

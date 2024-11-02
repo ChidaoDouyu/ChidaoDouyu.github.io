@@ -19,6 +19,10 @@ export default navbar([
         text: "网站搭建经验",
         link: "webbuild/"
       },
+      {
+        text: "计算机经验",
+        link: "computer/"
+      }
     ],
   }
 ]);

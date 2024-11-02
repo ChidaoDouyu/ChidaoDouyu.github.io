@@ -11,7 +11,11 @@ export default hopeTheme({
     url: "https://github.com/ChidaoDouyu",
   },
 
-  iconAssets: "fontawesome-with-brands",
+  iconAssets: [
+    "fontawesome-with-brands",
+    "fontawesome",
+    "iconify"
+  ],
 
   logo: "logo.jpg",
 

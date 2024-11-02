@@ -1,7 +1,6 @@
 ---
 home: true
 layout: BlogHome
-icon: home
 title: 主页
 #heroImage: /logo.jpg
 heroText: 这是 ChidaoDouyu 的博客
