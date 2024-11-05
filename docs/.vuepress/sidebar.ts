@@ -36,7 +36,15 @@ export default sidebar({
 
   "/culture/politics/": [
     { text: "主页", icon: "fas fa-home", link: "/" },
-    { text: "高中文化课", icon: "fas fa-book-open", link: "culture/" },
+    {
+      text: "高中文化课",
+      icon: "fas fa-book-open",
+      link: "/culture/",
+      children: [
+        { text: ".  .  .", link: "/culture/"},
+        { text: "思想政治", link: "/culture/politics/" }
+      ],
+    },
     { text: "必修一 中国特色社会主义", link: "formal1" },
     { text: "必修二 经济与社会", link: "formal2" },
     { text: "必修三 政治与法治", link: "formal3" },
