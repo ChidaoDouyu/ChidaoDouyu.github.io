@@ -1,10 +1,13 @@
 # Vuepress-Theme-Hope 搭建记录
 
-## 项目初始化
-
 >[!info]
 >本文仅供有一定代码基础的学习者！
 >遇见不懂的指令请自行搜索
+
+> [!warning]
+> 本页面将随开发而更新
+
+## 项目初始化
 
 ### 创建项目
 
@@ -118,11 +121,11 @@ jobs:
 - 目录：\<docs>/.vuepress/*.ts
 - 结构：
   config.ts
-  ```
+  ```ts
   import theme from "./theme.js"
   ```
   theme.ts 
-  ```
+  ```ts
   import navbar from "./navbar.js";
   import sidebar from "./sidebar.js"
   ```
@@ -155,6 +158,11 @@ export default sidebar({
     {...}
   ]
 })
+```
+- 若要按目录结构自动生成侧边栏，将侧边栏数组替换为"structure"即可
+```ts
+"/": "structure",
+{text: "***", prefix: "fuck/", link: "fuck/", children: "structure"}
 ```
 
 ## 导航栏开发
