@@ -19,15 +19,17 @@ export default sidebar({
     ]},
     {text: "个人介绍", icon: "fas fa-circle-info",link: "intro"}
   ],
-  "/posts/culture/politics/":[
+
+
+  "culture/politics/":[
     "/",
-    {text: "高中文化课",link: "/posts/culture/"},
+    {text: "高中文化课",link: "culture/"},
     "",
     {text: "必修二 经济与社会", link: "formal2"},
     {text: "必修三 政治与法治", link: "formal3"},
     {text: "必修四 哲学与文化", link: "formal4"}
   ],
-  // "/posts/webbuild/":[
+  // "webbuild/":[
   //   "/",
   //   "",
   //   {text: "Vuepress-Theme-Hope", link:"vuepressthemehope"}
