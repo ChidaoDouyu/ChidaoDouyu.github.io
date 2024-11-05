@@ -4,11 +4,11 @@ article: true
 
 # 验机教程
 
-> [!warning]
-> 本页面尚未编辑完成
-
 提前准备U盘 启动时跳过联网 运行软件检查硬件
 <!-- more -->
+
+> [!warning]
+> 本页面尚未编辑完成
 
 跳过联网步骤,在提示你选择wifi的界面按下Shift+F10,调出命令提示符,输入taskmgr,回车,打开任务管理器,在详细信息中找到OOBENetworkConnectionFlow.exe并杀掉进程,直接跳过这一步骤
 
