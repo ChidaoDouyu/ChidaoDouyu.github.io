@@ -1,5 +1,8 @@
 ---
 article: false
+pageInfo: false
+lastUpdated: false
+comment: false
 ---
 
 # 思想政治
