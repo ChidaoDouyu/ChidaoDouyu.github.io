@@ -1,5 +1,6 @@
 ---
 article: false
+index: false
 ---
 
 # 目录
