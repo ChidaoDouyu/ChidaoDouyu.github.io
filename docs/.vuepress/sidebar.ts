@@ -53,6 +53,19 @@ export default sidebar({
     { text: "选必二 法律与生活", link: "optional2" },
     { text: "选必三 逻辑与思维", link: "optional3" },
   ],
+  "/culture/physics/": [
+    { text: "主页", icon: "fas fa-home", link: "/" },
+    {
+      text: "高中文化课",
+      icon: "fas fa-book-open",
+      link: "/culture/",
+      children: [
+        { text: ".  .  .", link: "/culture/"},
+        { text: "物理", link: "/culture/physics/" }
+      ],
+    },
+    "history"
+  ],
   // "webbuild/":[
   //   "/",
   //   "",
