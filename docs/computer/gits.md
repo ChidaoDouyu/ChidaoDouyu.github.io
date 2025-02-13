@@ -43,4 +43,4 @@
 6. 添加文件至暂存区 `git add .`
 7. 提交文件至本地库 `git commit -m "message"`
 8. 推送本地分支至远程库 `git push <name> <branch>`
-9. 若需合并至其他分支，请访问远程仓库提出 Pull Request
+9. Pull Request
