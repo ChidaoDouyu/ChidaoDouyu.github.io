@@ -77,7 +77,7 @@ article: true
 > [!tip]
 > 政府首脑：政府首相、内阁总理或总统同时担任；国家元首：主席、总统或君主
 
-![](policy.png)
+![](http://pic.puremcs.top/img/2025/02/13/67adfbdd8245c.png)
 
 ### 政党
 - 马克思主义政党观
