@@ -8,12 +8,20 @@
 > [!warning]
 > 本页面尚未编辑完成
 
+## 配置
+- 查看全局配置 `git config -l --global`
+- 修改配置 `git config [option] <config> <custom>`
+- 使用ssh秘钥 `git config --global user.signingkey ~/.ssh/id_ed25519.pub`
+
 ## 初始化仓库
 - 克隆已有仓库 `git clone <remote-repo>`
 - 新建仓库
     1. 初始化git项目 `git init`
-    2. 在托管网站新建仓库并记录远程仓库地址
-    3. 添加远程仓库地址 `git remote add <remote-repo> <repo-name>`
+    2. 追踪项目文件 `git add ./*`
+    3. 提交项目文件 `git commit * -m '初始化仓库'`
+    4. 在托管网站(Github等)新建仓库并记录远程仓库地址
+    5. 添加远程仓库地址 `git remote add <remote-repo> <name>`
+    6. 推送仓库至远程仓库 `git push`
 
 
 ## 远程仓库管理
