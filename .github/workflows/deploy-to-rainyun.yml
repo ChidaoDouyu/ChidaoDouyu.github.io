@@ -49,4 +49,4 @@ jobs:
           SOURCE: "docs/.vuepress/dist"
           REMOTE_HOST: ${{ secrets.IP }}
           REMOTE_USER: ${{ secrets.user }}
-          TARGET: /users/web/blog
+          TARGET: /web/blog
