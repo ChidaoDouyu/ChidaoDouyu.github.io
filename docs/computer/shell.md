@@ -4,19 +4,19 @@ title: Linux指令教程
 ---
 声明：测试系统版本为Debian12
 
-# 基本教程：
+## 基本教程：
 apt install \<command> 安装相应指令，可以让debian使用ubuntu指令
 如遇到command not found可尝试安装再使用
 -h -help或--h --help参数可以查看指令参数 例如apt --help
 
-# 具体指令教程
+## 具体指令教程
 
-## 查看架构
+### 查看架构
 arch
 uname -m
 
 
-## 文件管理
+### 文件管理
 **转到目录**
 cd /opt/xx
 
@@ -51,17 +51,17 @@ unzip * -l
 unzip -d \<directory> * -v
 https://www.runoob.com/linux/linux-comm-unzip.html
 
-## 搜索
+### 搜索
 find \<directory> -name \<name>
 
-## 网络传输
+### 网络传输
 scp -r \<from> \<to> 将源地址的/opt/xx文件下载到目标地址的路径
 例:scp -r C:\xx root@123.123.123.123:/opt 
 例:scp -r root@123.123.123.123:/opt/xx C:\
 
 wget \<url>
 
-## 用户管理
+### 用户管理
 useradd [options] \<username> 新建用户 -d \<directory>指定主目录 -d \<directory> -m \<directory>新建目录并指定为主目录
 passwd [options] \<username> 设置密码 -l禁用账号 -u启用账号 -f下次登录时修改密码
 su \<username> 切换用户
@@ -70,7 +70,7 @@ usermod [options] \<username> 修改用户
 
 
 
-## 脚本管理
+### 脚本管理
 **授权**
 chmod u+x xx\.sh
 
@@ -79,7 +79,7 @@ chmod +x ./xx.sh 将本目录下的xx.sh指令化
 ./xx.sh 运行xx\.sh
 
 
-## 安装
+### 安装
 apt update
 apt install
 
@@ -87,7 +87,7 @@ apt-get update
 apt-get install
 
 
-## 编辑
+### 编辑
 vi ./xx.txt
 
 > vi基本上可以分为三种模式，分别是一般模式、编辑模式和命令行模式，各模式的功能区分如下：
@@ -105,7 +105,7 @@ vi ./xx.txt
  :ZZ 若更改则保存后离开，若未更改则无动作
  :w xx.txt 另存为
 
-## 释放端口
+### 释放端口
 netstat -anp| grep \<stat> 查看端口的占用状态
 如果提示command not found，执行apt install net-tools
 fuser -v -n \<tcp/udp> \<stat> 查看占用端口的进程
@@ -117,8 +117,8 @@ fuser -v -n \<tcp/udp> \<stat> 查看占用端口的进程
 kill \<PID> 杀死特定进程(强制杀死用参数-9)
 ps 查看所有进程 检查端口号即可发现进程已杀死
 
-# 其他程序教程
-## screen
+## 其他程序教程
+### screen
 screen -ls 列出所有会话
 screen -R \<name> 接入会话
 screen -S \<name> 新建会话
@@ -127,40 +127,40 @@ screen -d \<name> 退出会话
 在会话内Ctrl+A进入快捷键模式 A切换最近 D退出会话 K关闭窗口 :命令行
 
 
-## ts3启动
+### ts3启动
 useradd teamspeak 新建用户teamspeak
 找到ts3目录
 chmod +x ./teamspeak3_startscript.sh 
 ./teamspeak3_startscript.sh start 
 
-## git
+### git
 查看全局配置git config -l --global
-### 克隆Github仓库
+#### 克隆Github仓库
 如果提示输入Github账号密码请查看克隆链接形式
 如果为https请停止使用并回到仓库页改用ssh形式链接
-### 使用ssh秘钥
+#### 使用ssh秘钥
 git config --global user.signingkey ~/.ssh/id_ed25519.pub
 
-## MCAManager
+### MCAManager
 systemctl start mcsm-{daemon,web}.service
 systemctl stop mcsm-{daemon,web}.service
 systemctl restart mcsm-{daemon,web}.service
 
-## Alist
+### Alist
 ```
 局域网：http://example.com:5244/
 公网： http://example.com:5244/
 配置文件：/opt/alist/data/config.json
 ```
 
-## 从零开始：Lsky图床配合Alist实现图片上云
+### 从零开始：Lsky图床配合Alist实现图片上云
 参考文章：https://juejin.cn/post/7231740010986242104
 作者：Yoga0815
 来源：稀土掘金
 
 作者保留一切权利。
 Author reserves all rights.
-### 一、部署Alist
+#### 一、部署Alist
 1. 人帅心善的主播给你们把下载命令搬过来了。(于2025/2/13编辑)
 `curl -fsSL "https://alist.nn.ci/v3.sh" -o v3.sh && bash v3.sh`
 2. 跟随脚本引导，进行部署
@@ -180,42 +180,46 @@ Author reserves all rights.
 10. 这样那样后调整账号权限，勾选**WebDav的什么和什么**两项即可。
 图图图图图图图图图图图图图图图图图图图图图图图图图图图图图图
 
-### 二、部署Lsky图床
+#### 二、部署Lsky图床
 本步骤无特殊要求。
 有问题请自行搜索解答。
 
-### 三、修改Nginx配置项
+#### 三、修改Nginx配置项
 0. 提前下载nginx
 1. 打开/etc/nginx/nginx.json
 2. 在http框内添加以下内容
 ```
-#Lsky Pro | Image Hub
+    #Lsky Pro | Image Hub
     server {
         listen 80;
-        listen 443 ssl;
-        server_name image.domain.name.cn;
+        # listen 443 ssl;
+
         # HTTPS 需要指定 SSL/TLS 证书路径
         # 证书自行准备
-        ssl_certificate 公钥;
-        ssl_certificate_key 私钥;
-        ssl_session_cache shared:SSL:1m;
-        ssl_session_timeout 5m;
+        # ssl_certificate 公钥;
+        # ssl_certificate_key 私钥;
+        # ssl_session_cache shared:SSL:1m;
+        # ssl_session_timeout 5m;
+
+        server_name 本机域名;
+
         # 转发图床服务请求
+        # 转发端口替换为Lsky外部端口
         location / {
-            # 转发端口替换为Lsky外部端口
-            proxy_pass http://localhost:转发端口;
+            proxy_pass http://本机域名:转发端口;
             proxy_read_timeout 600s;
         }
+
         # 转发 AList 图片直链访问请求
         # 直链端口替换为Alist端口
-        location /image {
-            proxy_pass http://localhost:直链端口/dav/image;
+        location /img {
+            proxy_pass http://本机域名:直链端口/dav/image;
             proxy_read_timeout 600s;
         }
     }
 ```
 
-### 四、配置图床存储策略
+#### 四、配置图床存储策略
 1. 新建存储策略
 2. 修改策略配置
 
