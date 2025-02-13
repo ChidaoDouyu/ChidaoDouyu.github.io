@@ -48,7 +48,7 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
           ARGS: "-avz --delete"
-          SOURCE: "public/"
+          SOURCE: "docs/"
           REMOTE_HOST: server.puremcs.top
           REMOTE_USER: web
           TARGET: /users/web
