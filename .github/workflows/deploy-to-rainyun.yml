@@ -1,0 +1,54 @@
+name: 部署文档
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy-gh-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          # 如果你文档需要 Git 子模块，取消注释下一行
+          # submodules: true
+
+      - name: 设置 pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 8
+
+
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: 安装依赖
+        run: |
+          corepack enable
+          pnpm install --frozen-lockfile
+
+      - name: 构建文档
+        env:
+          NODE_OPTIONS: --max_old_space_size=8192
+        run: |-
+          pnpm run docs:build
+
+      - name: 推送到云服 # 第二步，rsync推文件
+        uses: AEnterprise/rsync-deploy@v1.0 # 使用别人包装好的步骤镜像
+        env:
+          DEPLOY_KEY: ${{ secrets.ACCESS_TOKEN }} # 引用配置，SSH私钥
+          ARGS: -avz --delete --exclude='*.pyc' # rsync参数，排除.pyc文件
+          SERVER_PORT: "22" # SSH端口
+          FOLDER: ./docs/.vuepress/dist # 要推送的文件夹，路径相对于代码仓库的根目录，视情况替换为自己的文件夹路径
+          SERVER_IP: ${{ secrets.IP }} # 引用配置，服务器的host名（IP或者域名domain.com）
+          USERNAME: ${{ secrets.user }} # 引用配置，服务器登录名
+          SERVER_DESTINATION: /users/web/blog # 部署到目标文件夹
