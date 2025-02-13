@@ -48,7 +48,7 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
           ARGS: "-avz --delete"
-          SOURCE: "docs/"
+          SOURCE: "docs/.vuepress/dist/"
           REMOTE_HOST: server.puremcs.top
           REMOTE_USER: web
           TARGET: /users/web
