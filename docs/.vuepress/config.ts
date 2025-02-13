@@ -6,8 +6,8 @@ export default defineUserConfig({
   base: "/",
 
   lang: "zh-CN",
-  title: "ChidaoDouyu's Blog",
-  description: "ChidaoDouyu's Blog",
+  title: "迟到的博客",
+  description: "迟到的博客",
 
   theme,
 
