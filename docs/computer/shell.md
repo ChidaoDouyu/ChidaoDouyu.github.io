@@ -2,9 +2,14 @@
 article: true
 title: Linux指令教程
 ---
-声明：测试系统版本为Debian12
+> [!caution]
+> 本教程仅供具有一定代码基础的爱好者学习借鉴
+> 对于执行任何操作所造成的后果, 作者不予负责
 
-## 基本教程：
+> [!info]
+> 测试系统版本为Debian12
+
+## 基本教程
 apt install \<command> 安装相应指令，可以让debian使用ubuntu指令
 如遇到command not found可尝试安装再使用
 -h -help或--h --help参数可以查看指令参数 例如apt --help
@@ -137,10 +142,3 @@ chmod +x ./teamspeak3_startscript.sh
 systemctl start mcsm-{daemon,web}.service
 systemctl stop mcsm-{daemon,web}.service
 systemctl restart mcsm-{daemon,web}.service
-
-### Alist
-```
-局域网：http://example.com:5244/
-公网： http://example.com:5244/
-配置文件：/opt/alist/data/config.json
-```
