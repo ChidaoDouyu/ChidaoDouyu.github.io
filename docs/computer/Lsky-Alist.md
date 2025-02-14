@@ -1,5 +1,6 @@
 ---
 article: true
+order: -999
 ---
 # 从零开始：Lsky图床配合Alist实现图片上云
 参考文章：https://juejin.cn/post/7231740010986242104

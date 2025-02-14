@@ -1,5 +1,6 @@
 ---
 article: true
+order: 1
 ---
 
 # 验机教程
