@@ -34,8 +34,10 @@ Alist是一款网盘列表软件。可用于代理网盘，建立本地与网盘
 8. 按照[**Alist文档指示**](https://alist.nn.ci/zh/guide/)进行剩余配置，告诉你的运营商你是你
 ![](http://pic.puremcs.top/img/2025/02/13/67ae15cac7487.png)
 ### 赋予WebDav权限
-9. 调整账号权限，勾选**WebDav读取和管理**两项即可。
+9. 调整admin账号权限，勾选**WebDav读取和管理**两项后**保存**。
 ![](http://pic.puremcs.top/img/2025/02/13/67ae16326bf65.png)
+10. 进入 设置 -> 全局，取消勾选"签名所有"后**保存**。
+![](http://pic.puremcs.top/img/2025/02/15/67af8db14b7f6.png)
 
 ## 二、部署Lsky图床
 测试机通过1Panel面板应用商店自动部署。
@@ -71,7 +73,7 @@ Alist是一款网盘列表软件。可用于代理网盘，建立本地与网盘
         # 转发 AList 图片直链访问请求
         # 直链端口替换为Alist端口
         location /img {
-            proxy_pass http://本机域名:直链端口/dav/image;
+            proxy_pass http://本机域名:直链端口/d/image;
             proxy_read_timeout 600s;
         }
     }
@@ -86,7 +88,7 @@ Alist是一款网盘列表软件。可用于代理网盘，建立本地与网盘
 |---|---|---|
 |名称|xx云盘||
 |储存策略|WebDav||
-|访问域名|example.com:转发端口/img||
+|访问域名|example.com/img||
 |连接地址|example.com:直链端口||
 |认证方式|Basic|不可以换其他的|
 |路径前缀|/dav/image||
