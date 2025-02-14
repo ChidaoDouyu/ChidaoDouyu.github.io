@@ -18,5 +18,9 @@ export default navbar([
   {
     text: "计算机经验",
     link: "computer/"
+  },
+  {
+    text: "其他文章",
+    link: "other/"
   }
 ]);
