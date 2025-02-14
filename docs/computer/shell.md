@@ -133,14 +133,6 @@ useradd teamspeak 新建用户teamspeak
 chmod +x ./teamspeak3_startscript.sh 
 ./teamspeak3_startscript.sh start 
 
-### git
-查看全局配置git config -l --global
-#### 克隆Github仓库
-如果提示输入Github账号密码请查看克隆链接形式
-如果为https请停止使用并回到仓库页改用ssh形式链接
-#### 使用ssh秘钥
-git config --global user.signingkey ~/.ssh/id_ed25519.pub
-
 ### MCAManager
 systemctl start mcsm-{daemon,web}.service
 systemctl stop mcsm-{daemon,web}.service
