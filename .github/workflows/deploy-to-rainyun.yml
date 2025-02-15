@@ -47,6 +47,7 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
           REMOTE_HOST: ${{ secrets.IP }}
           REMOTE_USER: ${{ secrets.user }}
-          ARGS: '-avz --delete'
-          SOURCE: 'docs/.vuepress/dist'
-          TARGET: '/web/blog'
+          ARGS: -avz --delete
+          SOURCE: docs/.vuepress/dist
+          TARGET: /web/blog
+          SCRIPT_BEFORE: ls
