@@ -31,7 +31,14 @@ export default sidebar({
       link: "computer/",
       children: "structure",
     },
-    { text: "其他文章", icon: "fas fa-file-lines", prefix: "other/", link: "other/"},
+    { 
+      text: "其他文章", 
+      icon: "fas fa-file-lines", 
+      prefix: "other/", 
+      link: "other/",
+      children: "structure",
+    
+    },
     { text: "个人介绍", icon: "fas fa-circle-info", link: "intro" },
   ],
 
