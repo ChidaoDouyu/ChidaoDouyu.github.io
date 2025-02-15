@@ -1,6 +1,7 @@
 ---
 article: true
 title: B站直播姬分区遮罩解决办法
+order: -998
 ---
 
 路径livehime\4.58.1.6249\data\plugins\bililive-filters\effects
