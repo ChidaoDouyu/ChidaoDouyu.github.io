@@ -3,10 +3,6 @@ article: true
 order: -999
 ---
 # 从零开始：Lsky图床配合Alist实现图片上云
-参考文章：https://juejin.cn/post/7231740010986242104
-作者：Yoga0815
-来源：稀土掘金
-
 > [!caution]
 > 本教程仅引导用户完成图片上云以及保证图片可见性。
 > 请自行确认Alist列表的安全性。初次部署请尽快查阅其他教程并调整配置。
@@ -71,7 +67,7 @@ Alist是一款网盘列表软件。可用于代理网盘，建立本地与网盘
         # 转发端口替换为Lsky外部端口
         location / {
             proxy_pass http://本机域名:转发端口;
-            proxy_set_header Host $host:$server_port;
+            proxy_set_header Host $host:$server_port; # 向目标端口传递正确的请求头
             proxy_read_timeout 600s;
         }
 
@@ -106,3 +102,16 @@ Alist是一款网盘列表软件。可用于代理网盘，建立本地与网盘
 3. 配置默认本地存储策略。取消选中所有用户组。(或删除本地存储策略)
 ![](http://pic.puremcs.top/img/2025/02/14/67ae1805182ec.png)
 4. 配置完成！
+
+
+> 参考文章：[AList+云盘+LskyPro · 搭建大容量图床服务](https://juejin.cn/post/7231740010986242104)
+作者：[Yoga0815](https://juejin.cn/user/2647279728860456/posts)
+来源：稀土掘金
+
+> 参考文章：[Nginx反向代理中proxy_set_header参数说明](https://www.cnblogs.com/kevingrace/p/8269955.html)
+作者：[散尽浮华](https://home.cnblogs.com/u/kevingrace/)
+来源：博客园
+
+> 参考文章：[使用 Alist WebDav 搭建图床服务](https://blog.imzjw.cn/posts/alist-pic/index.html)
+作者：[小嘉](https://blog.imzjw.cn/)
+
