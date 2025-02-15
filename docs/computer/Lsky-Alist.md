@@ -71,6 +71,7 @@ Alist是一款网盘列表软件。可用于代理网盘，建立本地与网盘
         # 转发端口替换为Lsky外部端口
         location / {
             proxy_pass http://本机域名:转发端口;
+            proxy_set_header Host $host:$server_port;
             proxy_read_timeout 600s;
         }
 
