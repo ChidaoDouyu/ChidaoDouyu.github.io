@@ -13,6 +13,9 @@ order: 1
 
 # 提前准备U盘
 0. 准备U盘
+[软件包下载](http://xz.puremcs.top/chfs/shared/CheckNewApps.zip)
+[图吧工具箱2025下载](http://xz.puremcs.top/chfs/shared/%E5%9B%BE%E5%90%A7%E5%B7%A5%E5%85%B7%E7%AE%B12025.rar)
+[memtest86安装部署教程](memtest86.md)
 
 # 启动时跳过联网
 1. 在提示你选择wifi的界面按下Shift+F10,调出命令提示符
@@ -23,8 +26,9 @@ order: 1
 4. 运行图吧工具箱
 重点软件: AIDA64(全能),CPUZ,GPUZ,ASSSDBenchmark(硬盘),Memtest(内存测试，运行后才能获得信息)
 [AIDA64的进阶教程](https://post.smzdm.com/p/a785w8vg/)
+[如何使用memtest86+测试电脑内存是否稳定？](https://www.bilibili.com/opus/823321479496073315)
 5. 检查硬件参数 使用AIDA64和HWINFO64
-重点检测内存,屏幕,网卡,硬盘。严格检查所有的硬件品牌、型号，和编号。
+重点检测内存、屏幕、网卡和硬盘。严格检查所有的硬件品牌、型号和编号。
 出现对不上的情况一定要敢于对质，因为对不上代表着这个机子甚至是翻新机。
 6. 检测硬盘 使用ASSSDBenchmark
 检查硬盘的通电时间是否超出100小时,读写数据量是否超出6T,电源的损耗程度是否超出5%,这些内容代表是否为新机,可以作为证据保留.
