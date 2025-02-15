@@ -42,7 +42,7 @@ jobs:
           pnpm run docs:build
 
       - name: 推送到云服
-        uses: easingthemes/ssh-deploy
+        uses: easingthemes/ssh-deploy@5.1.0
         env:
           SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
           REMOTE_HOST: ${{ secrets.IP }}
