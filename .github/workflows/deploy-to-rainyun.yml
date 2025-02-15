@@ -42,11 +42,27 @@ jobs:
           pnpm run docs:build
 
       - name: 推送到云服
-        uses: easingthemes/ssh-deploy@v5.1.0
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
-          REMOTE_HOST: ${{ secrets.IP }}
-          REMOTE_USER: ${{ secrets.user }}
-          ARGS: '-avz --delete'
-          SOURCE: 'docs/.vuepress/dist'
-          TARGET: '/web/blog'
+        # uses: easingthemes/ssh-deploy@v5.1.0
+        # env:
+        #   SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
+        #   REMOTE_HOST: ${{ secrets.IP }}
+        #   REMOTE_USER: ${{ secrets.user }}
+        #   ARGS: '-avz --delete'
+        #   SOURCE: 'docs/.vuepress/dist'
+        #   TARGET: '/web/blog'
+        uses: contention/rsync-deployments@v2.0.0
+        with:
+          # Initial/required rsync flags
+          flags: -avz --delete
+          # Exclude flags and directory pairs
+          # excludes: 
+          # The server user
+          user: ${{ secrets.user }}
+          # The deployment target
+          host: ${{ secrets.IP }}
+          # The local path to sync
+          localpath: 'docs/.vuepress/dist'
+          # The remote path to sync
+          remotepath: '/web/blog'
+          # The private key
+          deploy_key: ${{ secrets.ACCESS_TOKEN }}
