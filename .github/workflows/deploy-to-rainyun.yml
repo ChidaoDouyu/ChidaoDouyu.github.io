@@ -45,9 +45,8 @@ jobs:
         uses: easingthemes/ssh-deploy@v2.0.7
         env:
           SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
-          ARGS: "-avz --delete --exclude='*.pyc'"
-          SOURCE: "docs/.vuepress/dist"
           REMOTE_HOST: ${{ secrets.IP }}
           REMOTE_USER: ${{ secrets.user }}
+          ARGS: "-avze --delete"
+          SOURCE: "docs/.vuepress/dist"
           TARGET: /web/blog
-          SCRIPT_BEFORE: ls
