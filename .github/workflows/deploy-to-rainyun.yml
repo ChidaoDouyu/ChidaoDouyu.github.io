@@ -50,3 +50,4 @@ jobs:
           ARGS: '-avz --delete'
           SOURCE: 'docs/.vuepress/dist'
           TARGET: '/web/blog'
+          SCRIPT_BEFORE: ls
