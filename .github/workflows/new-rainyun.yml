@@ -38,7 +38,7 @@ jobs:
         run: pnpm run docs:build
       # 部署到服务器
       - name: 推送
-        uses: wlixcc/SFTP-Deploy-Action@main
+        uses: wlixcc/SFTP-Deploy-Action@v1.0
         with:  
           username: 'root'   #ssh user name
           server: '${{ secrets.IP }}' #引用之前创建好的secret
