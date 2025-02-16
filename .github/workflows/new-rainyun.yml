@@ -54,3 +54,5 @@ jobs:
           TARGET: '/web/blog'
           # 排除目录
           # EXCLUDE: "/node_modules/"
+          SCRIPT_BEFORE: ls
+          SCRIPT_BEFORE_REQUIRED: true
