@@ -21,6 +21,10 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
+      - name: 设置 pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 8
       - name: 安装Node.js
         # 使用action库  actions/setup-node安装node
         uses: actions/setup-node@v1
