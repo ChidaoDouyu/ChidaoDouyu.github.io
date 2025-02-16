@@ -38,7 +38,7 @@ jobs:
         run: pnpm run docs:build
       # 部署到服务器
       - name: 推送
-        uses: easingthemes/ssh-deploy@v2.1.1
+        uses: easingthemes/ssh-deploy@main
         env:
           # 本地.ssh文件下的私钥id_rsa，存在secrets的ACCESS_TOKEN中
           SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
