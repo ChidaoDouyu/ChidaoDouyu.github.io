@@ -37,9 +37,6 @@ jobs:
           cat ./known_hosts
           cat ./id_rsa
 
-      - name: ip
-        run: ipconfig
-
       - name: 设置 pnpm
         uses: pnpm/action-setup@v4
         with:
