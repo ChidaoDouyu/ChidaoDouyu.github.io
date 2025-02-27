@@ -1,12 +1,10 @@
-name: 部署文档
+name: Rsync部署至Rainyun
 
 on:
   push:
     branches:
       - main
- 
-permissions:
-  contents: write
+  workflow_dispatch:
 
 jobs:
   Deploy:
