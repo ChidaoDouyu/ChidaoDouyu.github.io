@@ -65,11 +65,12 @@ jobs:
 
       # Rsync部署到服务器
       - name: 推送
-        uses: easingthemes/ssh-deploy@v5.1.0
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.PRIVKEY }}
-          REMOTE_HOST: ${{ secrets.IP }}
-          REMOTE_USER: root
-          ARGS: '-avz --delete'
-          SOURCE: 'docs/.vuepress/dist'
-          TARGET: '/web/blog'
+        uses: contention/rsync-deployments@v2.0.0
+        with:
+          flags: -avz --delete
+          excludes: 
+          deploy_key: ${{ secrets.PRIVKEY }}
+          user: ${{ secrets.USER }}
+          host: ${{ secrets.IP }}
+          localpath: 'docs/.vuepress/dist'
+          remotepath: '/web/blog'
