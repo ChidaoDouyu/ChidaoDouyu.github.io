@@ -55,7 +55,7 @@ jobs:
           # Exclude flags and directory pairs
           # excludes: 
           # The server user
-          user: ${{ secrets.user }}
+          user: ${{ secrets.USER }}
           # The deployment target
           host: ${{ secrets.IP }}
           # The local path to sync
@@ -63,4 +63,4 @@ jobs:
           # The remote path to sync
           remotepath: '/web/blog'
           # The private key
-          deploy_key: ${{ secrets.ACCESS_TOKEN }}
+          deploy_key: ${{ secrets.PRIVKEY }}
