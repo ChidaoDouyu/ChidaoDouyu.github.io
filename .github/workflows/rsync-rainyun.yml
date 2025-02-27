@@ -69,7 +69,7 @@ jobs:
         with:
           flags: -avz --delete
           excludes: 
-          deploy_key: ${{ secrets.PRIVKEY }}
+          deploy_key: '~/.ssh/id_rsa'
           user: ${{ secrets.USER }}
           host: ${{ secrets.IP }}
           localpath: 'docs/.vuepress/dist'
