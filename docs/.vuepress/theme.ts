@@ -9,6 +9,7 @@ export default hopeTheme({
   author: {
     name: "ChidaoDouyu",
     url: "https://github.com/ChidaoDouyu",
+    email: "chidaodouyu@qq.com",
   },
 
   iconAssets: [
