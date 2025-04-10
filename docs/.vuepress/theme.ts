@@ -141,8 +141,7 @@ export default hopeTheme({
     comment: {
       provider: "Waline",
       serverURL: "http://waline.puremcs.top", //:8360
-      dark: "auto",
-      // reaction: ["true"],
+      dark: "auto"
     },
 
     components: {
