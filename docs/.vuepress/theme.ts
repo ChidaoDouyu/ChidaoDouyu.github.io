@@ -140,7 +140,7 @@ export default hopeTheme({
     
     comment: {
       provider: "Waline",
-      serverURL: "waline.puremcs.top", //:8360
+      serverURL: "154.64.252.155", //:8360
       dark: "auto",
       // recaptchaV3Key: "6Lf4ZxIrAAAAAM5hr2OKHMMrNFDqdLohAINAO34O",
       reaction: ["true"],
