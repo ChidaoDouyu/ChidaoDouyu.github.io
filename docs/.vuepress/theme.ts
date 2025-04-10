@@ -142,8 +142,7 @@ export default hopeTheme({
       provider: "Waline",
       serverURL: "http://waline.puremcs.top", //:8360
       dark: "auto",
-      // recaptchaV3Key: "6Lf4ZxIrAAAAAM5hr2OKHMMrNFDqdLohAINAO34O",
-      reaction: ["true"],
+      // reaction: ["true"],
     },
 
     components: {
