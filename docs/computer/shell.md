@@ -10,90 +10,95 @@ title: Linux指令教程
 > 测试系统版本为Debian12
 
 ## 基本教程
-apt install \<command> 安装相应指令，可以让debian使用ubuntu指令
+`apt install <command>` 安装相应指令，可以让debian使用ubuntu指令
 如遇到command not found可尝试安装再使用
--h -help或--h --help参数可以查看指令参数 例如apt --help
+-help 或 --help参数可以查看指令参数
+> 例: `apt --help`
 
 ## 具体指令教程
 
 ### 查看架构
-arch
-uname -m
+`arch`
+`uname -m`
 
 
 ### 文件管理
 **转到目录**
-cd /opt/xx
+`cd /opt/xx`
 
 **新建目录**
-mkdir [options] \<name> 新建目录 -m手动配置权限 -p递归创建/opt/user/username/abc
+`mkdir [options] <name>` 新建目录
+> -m手动配置权限 -p递归创建(/opt/user/username/abc)
 
 **列出文件**
-ls -a 显示所有文件和目录
-ls -d 显示所有目录
-ls -l 显示所有文件和目录及其信息
-ls -t 按照修改时间排序
-ls -A 不列出.和..的-a 
-ls -F 在列出的文件名后加一个符号(可执行档加*,目录加/)
-ls -r 递归显示目录及其子目录所有文件和目录
+`ls -a` 显示所有文件和目录
+`ls -d` 显示所有目录
+`ls -l` 显示所有文件和目录及其信息
+`ls -t` 按照修改时间排序
+`ls -A` 不列出.和..的-a 
+`ls -F` 在列出的文件名后加一个符号(可执行档加*,目录加/)
+`ls -r` 递归显示目录及其子目录所有文件和目录
 
 **移动文件**
-mv /opt/xx /opt 将本目录下的xx移动到opt中
-mv ./xx yy 将本目录下的xx改名为yy
+`mv /opt/xx /opt` 将本目录下的xx移动到opt中
+`mv ./xx yy` 将本目录下的xx改名为yy
 
 **删除文件**
-rm xx.txt 删除指定文件
-rm -f *xx* 无需确认并删除所有文件名中带有xx的文件
-rm -f -r xx 无需确认并删除xx
+`rm xx.txt` 删除指定文件
+`rm -f *xx*` 无需确认并删除所有文件名中带有xx的文件
+`rm -f -r xx` 无需确认并删除xx
 
 **压缩**
-zip -v output.zip file1 file2 ...
+`zip -v output.zip file1 file2 ...`
 
 **查看压缩包内容**
-unzip * -l
+`unzip * -l`
 
 **解压**
-unzip -d \<directory> * -v
-https://www.runoob.com/linux/linux-comm-unzip.html
+`unzip -d <directory> * -v`
+> 教程：[菜鸟教程](https://www.runoob.com/linux/linux-comm-unzip.html)
 
 ### 搜索
-find \<directory> -name \<name>
+`find <directory> -name <name>`
 
 ### 网络传输
-scp -r \<from> \<to> 将源地址的/opt/xx文件下载到目标地址的路径
-例:scp -r C:\xx root@123.123.123.123:/opt 
-例:scp -r root@123.123.123.123:/opt/xx C:\
+`scp -r <from> <to>` 将源地址的/opt/xx文件下载到目标地址的路径
+> 例:
+> `scp -r C:\xx root@123.123.123.123:/opt `
+> `scp -r root@123.123.123.123:/opt/xx C:\`
 
-wget \<url>
+`wget <url>`
 
 ### 用户管理
-useradd [options] \<username> 新建用户 -d \<directory>指定主目录 -d \<directory> -m \<directory>新建目录并指定为主目录
-passwd [options] \<username> 设置密码 -l禁用账号 -u启用账号 -f下次登录时修改密码
-su \<username> 切换用户
-userdel [options] \<username> 删除用户 -r删除用户并删除主目录
-usermod [options] \<username> 修改用户
+`useradd [options] <username>` 新建用户
+> `-d <directory>`指定主目录 `-d <directory> -m <directory>`新建目录并指定为主目录
+`passwd [options] <username>` 设置密码
+> -l禁用账号 -u启用账号 -f下次登录时修改密码
+`su <username>` 切换用户
+`userdel [options] <username>` 删除用户
+> -r删除用户并删除主目录
+`usermod [options] <username>` 修改用户
 
 
 
 ### 脚本管理
 **授权**
-chmod u+x xx\.sh
+`chmod u+x xx.sh`赋予脚本运行权限
 
 **运行**
-chmod +x ./xx.sh 将本目录下的xx.sh指令化
-./xx.sh 运行xx\.sh
+`./xx.sh` 运行xx.sh
 
 
 ### 安装
-apt update
-apt install
+`apt update`
+`apt install`
 
-apt-get update
-apt-get install
+`apt-get update`
+`apt-get install`
 
 
 ### 编辑
-vi ./xx.txt
+`vi ./xx.txt`
 
 > vi基本上可以分为三种模式，分别是一般模式、编辑模式和命令行模式，各模式的功能区分如下：
 **一般模式**：
@@ -111,34 +116,47 @@ vi ./xx.txt
  :w xx.txt 另存为
 
 ### 释放端口
-netstat -anp| grep \<stat> 查看端口的占用状态
-如果提示command not found，执行apt install net-tools
-fuser -v -n \<tcp/udp> \<stat> 查看占用端口的进程
-如果提示command not found，执行apt install psmisc
+`netstat -anp| grep <stat>` 查看端口的占用状态 如果提示command not found，执行`apt install net-tools`
+`fuser -v -n <tcp/udp> <stat>` 查看占用端口的进程 如果提示command not found，执行`apt install psmisc`
 >输出结果：
-               USER PID ACCESS COMMAND
-\<stat>/\<tcp/udp>:zhu 1154 F... java
+>```
+>               USER PID ACCESS COMMAND
+><stat>/<tcp/udp>:zhu 1154 F... java
+>```
 
-kill \<PID> 杀死特定进程(强制杀死用参数-9)
-ps 查看所有进程 检查端口号即可发现进程已杀死
+`kill <PID>` 杀死特定进程(强制杀死用参数-9)
+`ps` 查看所有进程 检查端口号即可发现进程已杀死
 
 ## 其他程序教程
 ### screen
-screen -ls 列出所有会话
-screen -R \<name> 接入会话
-screen -S \<name> 新建会话
-screen -S \<name> -X quit 关闭会话
-screen -d \<name> 退出会话
+`screen -ls` 列出所有会话
+`screen -R <name>` 接入会话
+`screen -S <name>` 新建会话
+`screen -S <name>` -X quit 关闭会话
+`screen -d <name>` 退出会话
 在会话内Ctrl+A进入快捷键模式 A切换最近 D退出会话 K关闭窗口 :命令行
 
 
 ### ts3启动
-useradd teamspeak 新建用户teamspeak
+`useradd teamspeak` 新建用户teamspeak
 找到ts3目录
-chmod +x ./teamspeak3_startscript.sh 
-./teamspeak3_startscript.sh start 
+`chmod +x ./teamspeak3_startscript.sh `
+`./teamspeak3_startscript.sh start `
 
 ### MCAManager
-systemctl start mcsm-{daemon,web}.service
-systemctl stop mcsm-{daemon,web}.service
-systemctl restart mcsm-{daemon,web}.service
+`systemctl start mcsm-{daemon,web}.service`
+`systemctl stop mcsm-{daemon,web}.service`
+`systemctl restart mcsm-{daemon,web}.service`
+
+### Nginx
+`nginx -t` 测试配置文件
+`nginx -s reload` 重启
+
+### Docker
+`docker exec -it <Dockername> /bin/sh` 进入容器Dockername (在Dockername新建终端并执行/bin/sh)
+
+### MySQL
+`mysql -u <username> -p` 作为username使用密码登录
+`use <pro>` 设置本次默认使用的数据库为pro
+> 若输入指令回车后出现->并无法跳出的情况，请输入;并回车
+> 原因：部分mysql指令须以;结尾，指令无法闭合
