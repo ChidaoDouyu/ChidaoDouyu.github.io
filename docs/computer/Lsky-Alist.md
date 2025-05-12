@@ -22,27 +22,28 @@ Alist是一款网盘列表软件。可用于代理网盘，建立本地与网盘
 `curl -fsSL "https://alist.nn.ci/v3.sh" -o v3.sh && bash v3.sh`
 2. 跟随脚本引导，进行部署
 ![](https://alist.nn.ci/img/guide/v3-install.png)
+图源：[Alist官方文档](https://alistgo.com/zh)
 3. 部署结束后，将展示的信息记下(默认端口为5244)。建议直接将随机密码改为常用密码。
 注：离开该页面后也可通过alist命令配置Alist
-![](http://pic.puremcs.top/img/2025/02/13/67ae070f124de.png)
+![](http://pic.puremcs.top/i/2025/05/12/6821eca4e9ea8.png)
 图源: [憨憨博客](https://blog.hanhanz.top)
 ### 配置Alist挂载网盘
 4. 在浏览器进入Alist网页。例如：https://example.com:5244
-![](http://pic.puremcs.top/img/2025/02/13/67ae08467845c.png)
+![](http://pic.puremcs.top/i/2025/05/12/6821ed2095de5.png)
 图源: [憨憨博客](https://blog.hanhanz.top)
 5. 输入第2步记录的账号密码，进入系统。
-![](http://pic.puremcs.top/img/2025/02/13/67ae14b7e8cb8.png)
+![](http://pic.puremcs.top/i/2025/05/12/6821ed3317000.png)
 6. 点击下方管理，左侧储存，开始添加新云盘
-![](http://pic.puremcs.top/img/2025/02/13/67ae14f094647.jpg)
+![](http://pic.puremcs.top/i/2025/05/12/6821ed3cd71fa.jpg)
 6. 选择云盘运营商 挂载位置选择/image即可
-![](http://pic.puremcs.top/img/2025/02/13/67ae1576ab3ef.png)
+![](http://pic.puremcs.top/i/2025/05/12/6821ed486fd2e.png)
 8. 按照[**Alist文档指示**](https://alist.nn.ci/zh/guide/)进行剩余配置，告诉你的运营商你是你
-![](http://pic.puremcs.top/img/2025/02/13/67ae15cac7487.png)
+![](http://pic.puremcs.top/i/2025/05/12/6821ed594d22d.png)
 ### 赋予WebDav权限
 9. 调整admin账号权限，勾选**WebDav读取和管理**两项后**保存**。
-![](http://pic.puremcs.top/img/2025/02/13/67ae16326bf65.png)
+![](http://pic.puremcs.top/i/2025/05/12/6821ed658db2b.png)
 10. 进入 设置 -> 全局，取消勾选"签名所有"后**保存**。
-![](http://pic.puremcs.top/img/2025/02/15/67af8db14b7f6.png)
+图片已失效，停止维护。
 
 ## 二、部署Lsky图床
 测试机通过1Panel面板应用商店自动部署。
@@ -101,11 +102,11 @@ Alist是一款网盘列表软件。可用于代理网盘，建立本地与网盘
 |用户名|admin|此处的用户必须有WebDav访问权限！跟着步骤做就不会漏。详见[一、部署Alist](#一-部署Alist)|
 |密码|设定的密码|忘记了就用`alist`引导脚本重置一下|
 
-![](http://pic.puremcs.top/img/2025/02/14/67ae177b60c23.png)
+![](http://pic.puremcs.top/i/2025/05/12/6821edee0fc9f.png)
 **图片仅作示例，请按实际情况填写。**
 ### 取消默认策略
 3. 配置默认本地存储策略。取消选中所有用户组。(或删除本地存储策略)
-![](http://pic.puremcs.top/img/2025/02/14/67ae1805182ec.png)
+![](http://pic.puremcs.top/i/2025/05/12/6821edf8dfa53.png)
 4. 配置完成！
 
 
