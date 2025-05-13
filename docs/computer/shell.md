@@ -50,7 +50,6 @@ title: Linux指令教程
 
 **输出文件**
 `cat file` 输出文件到控制台
-`cat file0 > file1` 将file0内容覆盖到file1
 `cat file0 >> file1` 将file0内容追加到file1末尾
 
 
