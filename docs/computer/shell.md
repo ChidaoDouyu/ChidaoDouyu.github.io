@@ -48,8 +48,15 @@ title: Linux指令教程
 `rm -f *xx*` 无需确认并删除所有文件名中带有xx的文件
 `rm -f -r xx` 无需确认并删除xx
 
+**输出文件**
+`cat file` 输出文件到控制台
+`cat file0 > file1` 将file0内容覆盖到file1
+`cat file0 >> file1` 将file0内容追加到file1末尾
+
+
 **压缩**
-`zip -v output.zip file1 file2 ...`
+`zip -v output.zip file1 file2 ...` 压缩文件
+`zip -r -v output.zip directory` 压缩目录
 
 **查看压缩包内容**
 `unzip * -l`
@@ -72,11 +79,14 @@ title: Linux指令教程
 ### 用户管理
 `useradd [options] <username>` 新建用户
 > `-d <directory>`指定主目录 `-d <directory> -m <directory>`新建目录并指定为主目录
+
 `passwd [options] <username>` 设置密码
 > -l禁用账号 -u启用账号 -f下次登录时修改密码
+
 `su <username>` 切换用户
 `userdel [options] <username>` 删除用户
 > -r删除用户并删除主目录
+
 `usermod [options] <username>` 修改用户
 
 
