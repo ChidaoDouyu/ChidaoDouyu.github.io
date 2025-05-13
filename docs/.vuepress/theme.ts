@@ -140,7 +140,7 @@ export default hopeTheme({
     
     comment: {
       provider: "Waline",
-      serverURL: "http://waline.puremcs.top", //:8360
+      serverURL: "http://blog.puremcs.top:8360", //:8360
       dark: "auto",
       emoji: ['//unpkg.com/@waline/emojis@1.1.0/weibo','https://unpkg.com/@waline/emojis@1.2.0/alus','https://unpkg.com/@waline/emojis@1.2.0/bilibili','https://unpkg.com/@waline/emojis@1.2.0/bmoji','https://unpkg.com/@waline/emojis@1.2.0/qq','https://unpkg.com/@waline/emojis@1.2.0/tieba','https://unpkg.com/@waline/emojis@1.2.0/tw-emoji','https://unpkg.com/@waline/emojis@1.2.0/weibo','https://unpkg.com/@waline/emojis@1.2.0/soul-emoji'],
     },
