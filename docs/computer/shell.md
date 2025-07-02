@@ -80,11 +80,11 @@ title: Linux指令教程
 > `-d <directory>`指定主目录 `-d <directory> -m <directory>`新建目录并指定为主目录
 
 `passwd [options] <username>` 设置密码
-> -l禁用账号 -u启用账号 -f下次登录时修改密码
+> `-l` 禁用账号 `-u` 启用账号 `-f` 下次登录时修改密码
 
 `su <username>` 切换用户
 `userdel [options] <username>` 删除用户
-> -r删除用户并删除主目录
+> `-r` 删除用户并删除主目录
 
 `usermod [options] <username>` 修改用户
 
@@ -148,7 +148,7 @@ title: Linux指令教程
 
 ### ts3启动
 `useradd teamspeak` 新建用户teamspeak
-找到ts3目录
+`cd <path>` 进入ts3目录
 `chmod +x ./teamspeak3_startscript.sh `
 `./teamspeak3_startscript.sh start `
 
@@ -162,18 +162,47 @@ title: Linux指令教程
 `nginx -s reload` 重启
 
 ### Docker
+注：大部分Docker命令都需要sudo权限
+#### 镜像管理
+`docker pull <registry>/<namespace>/<image>:<version>` 拉取镜像
+> `--platform=arm64` 指定CPU架构  
+`docker images` 列出所有镜像
+`docker rmi <image>` 删除指定镜像
+
+#### 容器管理
+`docker run <image> -d` 使用指定镜像创建并**后台**运行容器
+> `-p 30081:80` 将容器的80端口映射到宿主机的30081端口
+> `-v <宿主机目录>:<容器内目录>` 绑定挂载：将宿主机指定目录挂载到容器中
+> `-v <存储空间卷名>:<容器内目录>` 命名卷挂载：将指定存储空间挂载到容器中
+> 命名卷挂载初次使用时会自动初始化；而绑定挂载须手动初始化。
+> `-e <变量>` 附加环境变量
+> `--name <name>` 自定义容器名称
+`docker ps` 列出所有正在运行的容器
+`docker rm <Docker>` 删除容器
+> `-f` 强制删除运行中的容器  
 `docker exec -it <Dockername> /bin/sh` 进入容器Dockername (在Dockername新建终端并执行/bin/sh)
+
+#### 命名卷管理
+`docker volume create <Name>` 创建卷
+`docker volume inspect <Name>` 查看卷信息
+`docker volume list` 列出所有卷
+`docker volume remove <Name>` 删除指定卷
+`docker volume prune -a` 删除所有正未被使用的卷
 
 ### MySQL
 `mysql -u <username> -p` 作为username使用密码登录
 `use <pro>` 设置本次默认使用的数据库为pro
-> 若输入指令回车后出现->并无法跳出的情况，请输入;并回车
+> 若输入指令回车后出现->并无法跳出的情况，请输入`;`并回车
 > 原因：部分mysql指令须以;结尾，指令无法闭合
 
 ### 正则表达式
+#### 表达式
+`^` 行首
+`$` 行尾
+
 #### 删除空行
 匹配`(\n)^\s*$`
-替换为` `
+替换为空格
 
 #### 保留原内容
 匹配字段中通过`()`捕获表达式
