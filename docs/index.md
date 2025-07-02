@@ -6,7 +6,7 @@ title: 主页
 heroText: 这是 ChidaoDouyu 的博客
 heroFullScreen: false
 tagline: Otacus saves the world!
-bgImage: http://pic.puremcs.top/img/2025/02/15/67b056a3a0d44.jpg
+bgImage: http://pic.puremcs.top:40027/i/2025/07/03/68659ff9ae3ef.jpg
 # projects:
 #   - icon: project
 #     name: 项目名称
