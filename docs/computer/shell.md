@@ -10,12 +10,12 @@ title: Linux指令教程
 > 测试系统版本为Debian12
 
 ## 基本教程
-`apt install <command>` 安装相应指令，可以让debian使用ubuntu指令
+`apt install <program>` 安装相应指令，可以让debian使用ubuntu指令
 如遇到command not found可尝试安装再使用
 -help 或 --help参数可以查看指令参数
 > 例: `apt --help`
 
-## 具体指令教程
+## 原生指令教程
 
 ### 查看架构
 `arch`
@@ -28,43 +28,51 @@ title: Linux指令教程
 
 **新建目录**
 `mkdir [options] <name>` 新建目录
-> -m手动配置权限 -p递归创建(/opt/user/username/abc)
+> `-m` 手动配置权限
+> `-p` 递归创建
 
 **列出文件**
-`ls -a` 显示所有文件和目录
-`ls -d` 显示所有目录
-`ls -l` 显示所有文件和目录及其信息
-`ls -t` 按照修改时间排序
-`ls -A` 不列出.和..的-a 
-`ls -F` 在列出的文件名后加一个符号(可执行档加*,目录加/)
-`ls -r` 递归显示目录及其子目录所有文件和目录
+`ls [options] <pattern>` 打印指定目录下的文件和目录
+> `-A` 打印所有文件和目录(包括隐藏)
+> `-l` 打印元信息
+> `-d` 打印所有目录
+> `-F` 在列出的文件名后加一个符号(可执行档加*,目录加/)
+> `-r` 递归打印
+> `-t` 按照修改时间排序
 
 **移动文件**
-`mv /opt/xx /opt` 将本目录下的xx移动到opt中
-`mv ./xx yy` 将本目录下的xx改名为yy
+`mv <from> <to>` 移动文件
+`mv ./xyz0 xyz1` 实现改名
 
 **删除文件**
-`rm xx.txt` 删除指定文件
-`rm -f *xx*` 无需确认并删除所有文件名中带有xx的文件
-`rm -f -r xx` 无需确认并删除xx
+`rm [options] <pattern>` 删除指定文件
+> `-f` 强制
+> `-r` 递归(删除目录须添加)
 
 **输出文件**
-`cat file` 输出文件到控制台
-`cat file0 >> file1` 将file0内容追加到file1末尾
+`cat <file>` 输出文件到控制台
+`cat file0 > file1` 使用 file0 覆盖 file1
+`cat file0 >> file1` 将 file0 追加到 file1 末尾
 
 
 **压缩**
-`zip -v output.zip file1 file2 ...` 压缩文件
-`zip -r -v output.zip directory` 压缩目录
+`zip [options] <output.zip> <pattern>` 压缩文件或目录
+> `-v` 显示详细信息
+> `-r` 递归(压缩目录须添加)
 
 **查看压缩包内容**
-`unzip * -l`
+`unzip -l *`
+> `-l` 列出内容，但不解压
+> `-t` 测试文件完整性，但不解压
 
 **解压**
-`unzip -d <directory> * -v`
+`unzip -v <archive.zip>`
 > 教程：[菜鸟教程](https://www.runoob.com/linux/linux-comm-unzip.html)
+> `-v` 显示详细信息
+> `-d <dictionary>` 将解压缩的文件放入指定的目录
+> `-x <pattern>` 解压时排除指定的文件或目录
 
-### 搜索
+**搜索**
 `find <directory> -name <name>`
 
 ### 网络传输
@@ -148,7 +156,7 @@ title: Linux指令教程
 
 ### ts3启动
 `useradd teamspeak` 新建用户teamspeak
-`cd <path>` 进入ts3目录
+`cd <directory>` 进入ts3目录
 `chmod +x ./teamspeak3_startscript.sh `
 `./teamspeak3_startscript.sh start `
 
@@ -199,10 +207,10 @@ title: Linux指令教程
 `exit` 退出
 
 #### 命名卷管理
-`docker volume create <Name>` 创建卷
-`docker volume inspect <Name>` 查看卷信息
+`docker volume create <name>` 创建卷
+`docker volume inspect <name>` 查看卷信息
 `docker volume list` 列出所有卷
-`docker volume remove <Name>` 删除指定卷
+`docker volume remove <name>` 删除指定卷
 `docker volume prune -a` 删除所有正未被使用的卷
 
 #### 网络管理
@@ -279,4 +287,4 @@ CMD ["python3","main.py"]
 
 #### 保留原内容
 匹配字段中通过`()`捕获表达式
-替换字段中通过`\i`指定捕获的第i个表达式
+替换字段中通过`\i`指定捕获的第`i`个表达式
