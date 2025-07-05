@@ -170,17 +170,33 @@ title: Linux指令教程
 `docker rmi <image>` 删除指定镜像
 
 #### 容器管理
-`docker run <image> -d` 使用指定镜像创建并**后台**运行容器
-> `-p 30081:80` 将容器的80端口映射到宿主机的30081端口
+`docker create <image>` 使用指定镜像创建容器但不运行
+`docker run <image>` 使用指定镜像创建并启动容器
+> `-d` 在后台启动容器
+> `-p 30081:80` 将宿主机的30081端口映射到容器的80端口
 > `-v <宿主机目录>:<容器内目录>` 绑定挂载：将宿主机指定目录挂载到容器中
 > `-v <存储空间卷名>:<容器内目录>` 命名卷挂载：将指定存储空间挂载到容器中
 > 命名卷挂载初次使用时会自动初始化；而绑定挂载须手动初始化。
 > `-e <变量>` 附加环境变量
 > `--name <name>` 自定义容器名称
-`docker ps` 列出所有正在运行的容器
-`docker rm <Docker>` 删除容器
+> `-it` 允许进入容器控制台
+> `--rm` 当容器停止时自动删除容器
+> `--restart unless-stopped` 异常自动重启
+> `--network <name>` 指定网络
+
+`docker stop <docker>` 停止指定容器
+`docker start <docker>` 启动指定容器 
+`docker ps -a` 列出所有容器 (包括已停止和运行中)
+`docker rm <docker>` 删除容器
 > `-f` 强制删除运行中的容器  
-`docker exec -it <Dockername> /bin/sh` 进入容器Dockername (在Dockername新建终端并执行/bin/sh)
+
+`docker inspect <docker>` 查看容器信息
+`docker logs -f <docker>` 查看容器日志(实时刷新)
+
+#### 容器使用
+`docker exec <docker> 命令` 在指定容器内执行命令
+`docker exec -it <docker> /bin/sh` 进入指定容器控制台 (本质：在Dockername新建终端并执行/bin/sh)
+`exit` 退出
 
 #### 命名卷管理
 `docker volume create <Name>` 创建卷
@@ -188,6 +204,63 @@ title: Linux指令教程
 `docker volume list` 列出所有卷
 `docker volume remove <Name>` 删除指定卷
 `docker volume prune -a` 删除所有正未被使用的卷
+
+#### 网络管理
+`docker network list` 列出所有子网
+`docker network create <name>` 创建子网
+`docker network rm <name>` 删除指定子网
+> [!info]
+> - 桥接模式(默认)
+> Docker容器默认网络均为桥接模式
+> 容器网络空间与宿主机隔离
+> - 桥接子网
+> 创建容器时指定子网后，仅同一子网内的容器可以相互访问
+> - Host模式
+> 容器共享宿主机的网络环境，无需映射端口即可直接访问容器
+> - none模式
+> 不联网
+
+
+#### 镜像制作
+1. **编写配置**
+在根目录创建文件`Dockerfile`
+内容模板
+``` Dockerfile
+FROM python:3.13-slim
+// 基础镜像 
+
+WORKDIR /app
+// 设定工作目录
+
+COPY . .
+// 将第一个目录中的文件复制到第二个目录中
+
+RUN pip install -r requirements.txt
+// 安装指定依赖
+
+EXPOSE 8000
+// 声明服务端口(非强制)
+
+CMD ["python3","main.py"]
+// 设定容器启动时运行的命令，一个dockerfile中只能有一个CMD
+// 相应地，还有ENTRYPOINT命令，该命令优先级更高，不容易被覆盖
+```
+
+2. **构建镜像**
+在项目根目录执行 `docker build -t my_python_image:1.0.0 .`
+> `-t my_python_image:1.0.0` 指定镜像名称和版本号
+> `.` 指定构建目录
+
+3. **向DockerHub推送镜像**
+执行 `docker login` 并按要求到浏览器输入验证码登录
+执行 `docker push <namespace>/<image>` 推送镜像
+> [!warning]
+> 注意：在为镜像命名时须命名为 `namespace/image` 的形式  
+
+#### Docker Compose
+一种扩展性强的多容器编排技术。
+详情请自行查询。
+
 
 ### MySQL
 `mysql -u <username> -p` 作为username使用密码登录
