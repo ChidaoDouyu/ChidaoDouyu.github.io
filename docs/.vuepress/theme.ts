@@ -12,6 +12,8 @@ export default hopeTheme({
     email: "chidaodouyu@qq.com",
   },
 
+  favicon: "http://pic.puremcs.top:40027/i/2025/07/06/686a97a34be90.jpg",
+
   iconAssets: [
     "fontawesome-with-brands",
     "fontawesome",
