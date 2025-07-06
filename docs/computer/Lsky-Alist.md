@@ -25,23 +25,23 @@ Alist是一款网盘列表软件。可用于代理网盘，建立本地与网盘
 图源：[Alist官方文档](https://alistgo.com/zh)
 3. 部署结束后，将展示的信息记下(默认端口为5244)。建议直接将随机密码改为常用密码。
 注：离开该页面后也可通过alist命令配置Alist
-![](http://pic.puremcs.top/i/2025/05/12/6821eca4e9ea8.png)
+![](https://imgse.com/i/pCIdMYq)
 图源: [憨憨博客](https://blog.hanhanz.top)
 ### 配置Alist挂载网盘
 4. 在浏览器进入Alist网页。例如：https://example.com:5244
-![](http://pic.puremcs.top/i/2025/05/12/6821ed2095de5.png)
+![](https://imgse.com/i/pCIwRrF)
 图源: [憨憨博客](https://blog.hanhanz.top)
 5. 输入第2步记录的账号密码，进入系统。
-![](http://pic.puremcs.top/i/2025/05/12/6821ed3317000.png)
+图片已失效，停止维护。
 6. 点击下方管理，左侧储存，开始添加新云盘
-![](http://pic.puremcs.top/i/2025/05/12/6821ed3cd71fa.jpg)
+图片已失效，停止维护。
 6. 选择云盘运营商 挂载位置选择/image即可
-![](http://pic.puremcs.top/i/2025/05/12/6821ed486fd2e.png)
+图片已失效，停止维护。
 8. 按照[**Alist文档指示**](https://alist.nn.ci/zh/guide/)进行剩余配置，告诉你的运营商你是你
-![](http://pic.puremcs.top/i/2025/05/12/6821ed594d22d.png)
+图片已失效，停止维护。
 ### 赋予WebDav权限
 9. 调整admin账号权限，勾选**WebDav读取和管理**两项后**保存**。
-![](http://pic.puremcs.top/i/2025/05/12/6821ed658db2b.png)
+图片已失效，停止维护。
 10. 进入 设置 -> 全局，取消勾选"签名所有"后**保存**。
 图片已失效，停止维护。
 
@@ -102,11 +102,11 @@ Alist是一款网盘列表软件。可用于代理网盘，建立本地与网盘
 |用户名|admin|此处的用户必须有WebDav访问权限！跟着步骤做就不会漏。详见[一、部署Alist](#一-部署Alist)|
 |密码|设定的密码|忘记了就用`alist`引导脚本重置一下|
 
-![](http://pic.puremcs.top/i/2025/05/12/6821edee0fc9f.png)
+图片已失效，停止维护。
 **图片仅作示例，请按实际情况填写。**
 ### 取消默认策略
 3. 配置默认本地存储策略。取消选中所有用户组。(或删除本地存储策略)
-![](http://pic.puremcs.top/i/2025/05/12/6821edf8dfa53.png)
+图片已失效，停止维护。
 4. 配置完成！
 
 
