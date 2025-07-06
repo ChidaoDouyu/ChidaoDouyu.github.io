@@ -108,7 +108,7 @@ export default hopeTheme({
     // 复制自动添加CopyRight信息
     copyright: {
       global: true,
-      triggerLength: 0,
+      triggerLength: 20,
       author: "ChidaoDouyu",
       license: "CC BY-NC-ND 4.0"
     },
