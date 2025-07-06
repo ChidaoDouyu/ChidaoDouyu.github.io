@@ -7,7 +7,11 @@ export default defineUserConfig({
 
   locales: {
     "/": {lang: "zh-CN"},
-    "/en/" : {lang: "en-US"}
+    "/en/" : {
+      lang: "en-US",
+      title: "Chidao_Douyu's Blog",
+      description: "Chidao_Douyu's Blog"
+    }
   },
   title: "迟到的博客",
   description: "迟到的博客",
