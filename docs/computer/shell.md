@@ -271,8 +271,8 @@ CMD ["python3","main.py"]
 
 
 ### MySQL
-`mysql -u <username> -p` 作为username使用密码登录
-`use <pro>` 设置本次默认使用的数据库为pro
+`mysql -u <user> -p` 使用密码登录作为指定用户登录
+`use <database>` 指定操作的数据库
 > 若输入指令回车后出现->并无法跳出的情况，请输入`;`并回车
 > 原因：部分mysql指令须以;结尾，指令无法闭合
 
