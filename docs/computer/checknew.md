@@ -5,8 +5,6 @@ order: 1
 
 # 验机教程
 
-> [!warning]
-> 本页面尚未编辑完成
 
 本文章重点讲述新机到手如何进行查验。
 <!-- more -->
@@ -18,9 +16,9 @@ order: 1
 [memtest86安装部署教程](memtest86.md)
 
 # 启动时跳过联网
-1. 在提示你选择wifi的界面按下Shift+F10,调出命令提示符
-2. 输入taskmgr,回车,打开任务管理器
-3. 在详细信息中找到OOBENetworkConnectionFlow.exe并杀掉进程
+1. 在提示你选择wifi的界面按下 Shift + F10, 调出命令提示符
+2. 输入`taskmgr`, 回车, 打开任务管理器
+3. 在详细信息中找到`OOBENetworkConnectionFlow.exe`并杀掉进程
 
 # 运行软件
 4. 运行图吧工具箱
