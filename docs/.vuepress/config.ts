@@ -5,7 +5,10 @@ import theme from "./theme.js";
 export default defineUserConfig({
   base: "/",
 
-  lang: "zh-CN",
+  locales: {
+    "/": {lang: "zh-CN"},
+    "/en/" : {lang: "en-US"}
+  },
   title: "迟到的博客",
   description: "迟到的博客",
 
