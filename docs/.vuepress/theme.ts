@@ -2,8 +2,21 @@ import { hopeTheme } from "vuepress-theme-hope";
 
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
+import ENnavbar from "./ennavbar.js";
+import ENsidebar from "./ensidebar.js";
 
 export default hopeTheme({
+  // 多语言配置
+  locales: {
+    // 英语
+    "/en/": {
+      blog: {
+        description: "A casual coding hobbyists"
+      },
+      navbar: ENnavbar,
+      sidebar: ENsidebar,
+    }
+  },
   hostname: "http://blog.puremcs.top",
 
   author: {
