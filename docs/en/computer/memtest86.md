@@ -6,6 +6,9 @@ title: Memtest86 Setting Tutorial
 > [!warning]
 > This page haven't been fully translated.
 
+This article provides the setting method of Memtest86.
+<!-- more -->
+
 1. 下载 Memtest
 首先，你需要从 Memtest 的官方网站下载最新版本的 Memtest86+。你可以选择 ISO 镜像文件或 USB 安装程序。
 

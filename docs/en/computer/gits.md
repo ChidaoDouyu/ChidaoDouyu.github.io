@@ -10,6 +10,10 @@ title: Git Tutorial
 > [!warning]
 > This page haven't been completed and fully translated.
 
+This article provides part of using tutorial and command explaination for Git.
+
+<!-- more -->
+
 ## 配置
 - 查看全局配置 `git config -l --global`
 - 修改配置 `git config [option] <config> <custom>`
