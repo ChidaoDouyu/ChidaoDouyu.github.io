@@ -6,15 +6,19 @@ export default defineUserConfig({
   base: "/",
 
   locales: {
-    "/": {lang: "zh-CN"},
+    "/": {
+      lang: "zh-CN",
+      title: "迟到的博客",
+      description: "迟到的博客"
+    },
     "/en/" : {
       lang: "en-US",
       title: "Chidao_Douyu's Blog",
       description: "Chidao_Douyu's Blog"
-    }
+    },
   },
-  title: "迟到的博客",
-  description: "迟到的博客",
+  title: "Chidao_Douyu's Blog",
+  description: "Chidao_Douyu's Blog",
 
   theme,
 
