@@ -3,6 +3,9 @@ article: true
 title: 我的世界模组
 ---
 
+一些常用的我的世界模组
+<!-- more -->
+
 - 辅助模组
 REI物品管理器
 Inventory Profiles Next 背包整理
