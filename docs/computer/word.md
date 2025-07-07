@@ -1,9 +1,10 @@
 ---
 article: true
-title: Word文档编写方法
+title: Word文档格式教程
 ---
 
-
+本文论述了Word文档格式化教程
+<!-- more -->
 
 公式篇
 _表示下角标

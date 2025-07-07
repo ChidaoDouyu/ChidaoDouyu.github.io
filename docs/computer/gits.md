@@ -7,6 +7,10 @@
 > [!warning]
 > 本页面尚未编辑完成
 
+本文提供了一些 Git 程序的使用教程及命令解释
+
+<!-- more -->
+
 ## 配置
 - 查看全局配置 `git config -l --global`
 - 修改配置 `git config [option] <config> <custom>`

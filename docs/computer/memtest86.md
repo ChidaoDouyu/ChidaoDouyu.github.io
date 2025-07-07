@@ -2,6 +2,10 @@
 article: true
 title: memtest86安装部署教程
 ---
+
+本文论述了Memtest86的部署使用
+<!-- more -->
+
 1. 下载 Memtest
 首先，你需要从 Memtest 的官方网站下载最新版本的 Memtest86+。你可以选择 ISO 镜像文件或 USB 安装程序。
 

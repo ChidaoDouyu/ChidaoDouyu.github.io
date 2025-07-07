@@ -1,6 +1,6 @@
 ---
 article: true
-title: Linux指令教程
+title: Linux命令教程
 ---
 > [!caution]
 > 本教程仅供具有一定代码基础的爱好者学习借鉴
@@ -9,13 +9,17 @@ title: Linux指令教程
 > [!info]
 > 测试系统版本为Debian12
 
+本文提供了部分Linux Shell的操作教程及命令解释
+
+<!-- more -->
+
 ## 基本教程
-`apt install <program>` 安装相应指令，可以让debian使用ubuntu指令
+`apt install <program>` 安装相应命令，可以让debian使用ubuntu命令
 如遇到command not found可尝试安装再使用
--help 或 --help参数可以查看指令参数
+-help 或 --help参数可以查看命令参数
 > 例: `apt --help`
 
-## 原生指令教程
+## 原生命令教程
 
 ### 查看架构
 `arch`
@@ -273,8 +277,8 @@ CMD ["python3","main.py"]
 ### MySQL
 `mysql -u <user> -p` 使用密码登录作为指定用户登录
 `use <database>` 指定操作的数据库
-> 若输入指令回车后出现->并无法跳出的情况，请输入`;`并回车
-> 原因：部分mysql指令须以;结尾，指令无法闭合
+> 若输入命令回车后出现->并无法跳出的情况，请输入`;`并回车
+> 原因：部分mysql命令须以;结尾，命令无法闭合
 
 ### 正则表达式
 #### 表达式
