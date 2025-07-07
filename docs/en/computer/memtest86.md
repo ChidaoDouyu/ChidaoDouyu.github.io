@@ -3,28 +3,25 @@ article: true
 title: Memtest86 Setting Tutorial
 ---
 
-> [!warning]
-> This page haven't been fully translated.
-
 This article provides the setting method of Memtest86.
 <!-- more -->
 
-1. 下载 Memtest
-首先，你需要从 Memtest 的官方网站下载最新版本的 Memtest86+。你可以选择 ISO 镜像文件或 USB 安装程序。
+1. Download Memtest
+First，You need to downlaod the newest version from the Memtest official website. You can choose ISO mirror file or USB installing program.
 
-2. 创建启动盘
-如果你下载的是 ISO 镜像文件，可以使用刻录软件将其刻录到光盘上。如果你选择的是 USB 安装程序，可以使用工具如 Rufus 将其写入到 USB 闪存盘中。
+2. Create Starting Disk
+If using the ISO mirror, you can burn it to disc. If using the USB installing program, you can write it to a USB flash drive.
 
-3. 启动 Memtest
-将光盘或 USB 闪存盘插入电脑。
-重启电脑，并进入 BIOS 设置（通常通过按下 F2、F12、DEL 或 ESC 键）。
-在 BIOS 中设置从光盘或 USB 闪存盘启动。
-保存设置并退出 BIOS，电脑将从光盘或 USB 闪存盘启动，并自动运行 Memtest。
+3. Run Memtest
+Plug the disc or USB flash drive into the computer.
+Reboot the computer, and go into the BIOS (usually press F2, F12, DEL, or ESC).
+Set to boot from the disc or USB flash drive in BIOS.
+Confirm and quit the BIOS, PC will boot from disc and USB flash drive and run Memtest automatically.
 
-4. 运行测试
-Memtest 启动后，会自动开始测试内存。你可以看到测试进度和错误信息。建议至少运行一个完整的测试循环（通常需要几个小时），以确保内存的稳定性。
+4. Testing
+After boot from Memtest, it will test the memory automatically. You can view the progress and error infomation. At least a full cycle is suggested (usually a few hours) to ensure the stability of the memory.
 
-5. 检查结果
-测试完成后，Memtest 会显示测试结果。如果没有错误，说明内存正常。如果发现错误，可能需要更换内存模块或进一步检查硬件问题。
+5. Check the outcome
+After completed，Memtest will print the result. If there's no error, the memory is normal. If there's any error, you need to replace the memory module or check for hardware issues further.
 
-[返回验机教程](checknew.md#运行软件)
+[Back to CheckNewPC](checknew.md#running-the-program)

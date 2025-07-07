@@ -8,45 +8,45 @@ title: Git Tutorial
 > For any consequence, the author is not responsible.
 
 > [!warning]
-> This page haven't been completed and fully translated.
+> This page haven't been completed.
 
 This article provides part of using tutorial and command explaination for Git.
 
 <!-- more -->
 
-## 配置
-- 查看全局配置 `git config -l --global`
-- 修改配置 `git config [option] <config> <custom>`
-- 使用ssh秘钥 `git config --global user.signingkey ~/.ssh/id_ed25519.pub`
+## Config
+- View the global configuration `git config -l --global`
+- Modify the configuration `git config [option] <config> <custom>`
+- Use the SSH key `git config --global user.signingkey ~/.ssh/id_ed25519.pub`
 
-## 初始化仓库
-- 克隆已有仓库 `git clone <remote-repo>`
-- 新建仓库
-    1. 初始化git项目 `git init`
-    2. 追踪项目文件 `git add ./*`
-    3. 提交项目文件 `git commit * -m '初始化仓库'`
-    4. 在托管网站(Github等)新建仓库并记录远程仓库地址
-    5. 添加远程仓库地址 `git remote add <remote-repo> <name>`
-    6. 推送仓库至远程仓库 `git push`
+## Start a repository
+- Clone an existing repository `git clone <remote-repo>`
+- Create a new repository
+    1. Initialize the git project `git init`
+    2. Keep track of project files `git add ./*`
+    3. Commit the project files `git commit * -m 'Initialization'`
+    4. Create a remote repository on Github/other website and copy the domain
+    5. Record the domain of the remote repository `git remote add <remote-repo> <name>`
+    6. Push files to the remote repository `git push`
 
 
-## 远程仓库管理
-- 添加远程仓库地址 `git remote add <remote-repo> <repo-name>`
-- 查看全部远程仓库地址 `git remote show`
+## Remote repository management
+- Record new remote repository `git remote add <remote-repo> <repo-name>`
+- View all remote repository `git remote show`
 - 
 
 
-## 分支管理
-- 新建并切换到分支 `git checkout -b <new-branch>`
-- 切换到分支 `git switch <branch>`
+## Branch Management
+- Create and switch to the branch `git checkout -b <new-branch>`
+- Switch to branch `git switch <branch>`
 
 
-## 工作流程
-1. 拉取最新更新 `git pull`
-2. 查看当前分支 `git branch -v`
-3. (可选) 新建并切换到分支 `git checkout -b <new-branch>`
-5. 进行工作
-6. 添加文件至暂存区 `git add .`
-7. 提交文件至本地库 `git commit -m "message"`
-8. 推送本地分支至远程库 `git push <name> <branch>`
+## Work Flow
+1. Pull newest update `git pull`
+2. View current branch `git branch -v`
+3. (Optional) Create and switch to the branch `git checkout -b <new-branch>`
+5. Work
+6. Add the files to staging area `git add .`
+7. Commit the files `git commit -m "message"`
+8. Push the local branch to remote repository `git push <name> <branch>`
 9. Pull Request
