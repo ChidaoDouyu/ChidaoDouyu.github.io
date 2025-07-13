@@ -1,6 +1,7 @@
 ---
 article: true
-title: 我的世界模组
+title: 我的世界常用模组
+cover: https://www.minecraft.net/content/dam/minecraftnet/franchise/component-library/parallaxC/scene_default/day/Focus_Cherry.png
 ---
 
 一些常用的我的世界模组

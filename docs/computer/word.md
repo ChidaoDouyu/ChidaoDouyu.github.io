@@ -1,6 +1,7 @@
 ---
 article: true
 title: Word文档格式教程
+cover: http://pic.puremcs.top:40027/i/2025/07/10/686ebe4e23a68.webp
 ---
 
 本文论述了Word文档格式化教程

@@ -1,6 +1,7 @@
 ---
 article: true
 title: Linux命令教程
+cover: http://pic.puremcs.top:40027/i/2025/07/07/686ba75c03ad2.png
 ---
 > [!caution]
 > 本教程仅供具有一定代码基础的爱好者学习借鉴

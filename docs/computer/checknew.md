@@ -1,6 +1,5 @@
 ---
 article: true
-order: 1
 title: 验机教程
 ---
 

@@ -1,5 +1,6 @@
 ---
-article: true
+article: false
+index: false # 不在侧边栏显示
 title: memtest86安装部署教程
 ---
 
