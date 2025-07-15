@@ -10,7 +10,8 @@ cover: http://pic.puremcs.top:40027/i/2025/07/07/686ba75c03ad2.png
 > [!info]
 > 测试系统版本为Debian12
 
-本文提供了部分Linux Shell的操作教程及命令解释
+> [!warning]
+> 本文随作者使用而更新
 
 <!-- more -->
 
