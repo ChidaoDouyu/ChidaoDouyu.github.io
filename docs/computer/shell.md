@@ -294,3 +294,7 @@ CMD ["python3","main.py"]
 #### 保留原内容
 匹配字段中通过`()`捕获表达式
 替换字段中通过`\i`指定捕获的第`i`个表达式
+
+### pnpm
+`pnpm list` 列出包
+`rm -rf ./node_modules` 删除node_modules
