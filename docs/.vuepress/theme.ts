@@ -27,12 +27,6 @@ export default hopeTheme({
 
   favicon: "http://pic.puremcs.top:40027/i/2025/07/06/686a97a34be90.jpg",
 
-  iconAssets: [
-    "fontawesome-with-brands",
-    "fontawesome",
-    "iconify"
-  ],
-
   logo: "logo.jpg",
 
   repo: "ChidaoDouyu/ChidaoDouyu.github.io",
@@ -44,6 +38,60 @@ export default hopeTheme({
 
   // 侧边栏
   sidebar,
+
+  // 主题 Markdown 选项
+  markdown: {
+    // 支持github风格的md格式 (GitHub Flavored Markdown)
+    // GFM 需要 mathjax-full 来支持tex格式
+    gfm: true,
+
+    // 支持github风格的警告容器
+    // alert: true,
+
+    // 支持荧光笔标记 ==xxx==
+    mark: true,
+
+    // 支持上下角标 ^xxx^ ~xxx~
+    sup: true,
+    sub: true,
+
+    // 支持剧透 !!xxx!!
+    spoiler: true,
+
+    // 支持图片描述
+    figure: true,
+
+    // 图片懒加载
+    imgLazyload: true,
+
+    // 图片标记 (用于支持黑色白色主题不同图片)
+    imgMark: true,
+
+    // 支持数学公式 默认使用katex/mathjax
+    math: true,
+
+    // 支持plantuml图表
+    plantuml: true,
+    
+    // 支持代码案例
+    demo: true,
+
+    // 开启组件
+    component: true,
+
+    // 支持markdown导入文件功能
+    include: true,
+
+    // 支持选项卡功能
+    tabs: true,
+    codeTabs: true,
+
+    // 代码块渲染器设定
+    highlighter: {
+      // 折叠的行
+      collapsedLines: 8
+    },
+  },
 
   // 页脚
   footer: "",
@@ -131,9 +179,6 @@ export default hopeTheme({
     // 关闭图片预览
     photoSwipe: false,
 
-    markdownHint:{
-      alert: true
-    },
 
     // 自动生成目录
     catalog: {
@@ -160,57 +205,25 @@ export default hopeTheme({
       emoji: ['//unpkg.com/@waline/emojis@1.1.0/weibo','https://unpkg.com/@waline/emojis@1.2.0/alus','https://unpkg.com/@waline/emojis@1.2.0/bilibili','https://unpkg.com/@waline/emojis@1.2.0/bmoji','https://unpkg.com/@waline/emojis@1.2.0/qq','https://unpkg.com/@waline/emojis@1.2.0/tieba','https://unpkg.com/@waline/emojis@1.2.0/tw-emoji','https://unpkg.com/@waline/emojis@1.2.0/weibo','https://unpkg.com/@waline/emojis@1.2.0/soul-emoji'],
     },
 
+    icon: {
+      assets: ["fontawesome-with-brands","fontawesome","iconify"]
+    },
+
     components: {
       components: ["Badge", "BiliBili", "PDF", "Share", "SiteInfo", "VPCard", "VidStack"],
+      componentOptions: {
+        share: {
+          services: ['qq', 'weibo', 'facebook', 'twitter', 'reddit', 'pinterest', 'snapchat', 'tumblr', 'telegram', 'whatsapp', 'line', 'linkedin', 'douban', 'buffer', 'wordpress', 'flipboard', 'evernote', 'qrcode', 'email', 'messenger', 'sms']
+        }
+      }
     },
 
-    // 此处开启了很多功能用于演示，你应仅保留用到的功能。
-    markdownImage: {
-      figure: true,
-      lazyload: true,
-      size: true,
-    },
-
-    markdownMath: {
-      // 启用前安装 katex
-      type: "katex",
-     },
-
-    // 此功能被开启用于演示，你应仅当使用时保留。
-    markdownTab: true,
 
     // 此处开启了很多功能用于演示，你应仅保留用到的功能。
-    mdEnhance: {
-      align: true,
-      attrs: true,
-      component: true,
-      demo: true,
-      include: true,
-      mark: true,
-      plantuml: true,
-      spoiler: true,
-      stylize: [
-        {
-          matcher: "Recommended",
-          replacer: ({ tag }) => {
-            if (tag === "em")
-              return {
-                tag: "Badge",
-                attrs: { type: "tip" },
-                content: "Recommended",
-              };
-          },
-        },
-      ],
-      sub: true,
-      sup: true,
-      tasklist: true,
-      vPre: true,
+      
 
       // 在启用之前安装 chart.js
       // chart: true,
-
-      // insert component easily
 
       // 在启用之前安装 echarts
       // echarts: true,
@@ -218,8 +231,7 @@ export default hopeTheme({
       // 在启用之前安装 flowchart.ts
       // flowchart: true,
 
-      // gfm requires mathjax-full to provide tex support
-      gfm: true,
+      
 
       // 在启用之前安装 mermaid
       // mermaid: true,
@@ -297,4 +309,4 @@ export default hopeTheme({
     //   plugins: ["highlight", "math", "search", "notes", "zoom"],
     // },
   },
-});
+);

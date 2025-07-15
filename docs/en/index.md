@@ -1,6 +1,6 @@
 ---
 home: true
-layout: BlogHome
+layout: Blog
 title: Home
 locale: en-US
 #heroImage: /logo.jpg
