@@ -10,35 +10,7 @@
 ## 项目初始化
 
 ### 创建项目
-
-1. 环境：pnpm git
-
-2. mkdir \<new-proj> // 可自定义目录名
-cd \<new-proj>
-
-3. git init // 初始化git项目
-pnpm init // 初始化pnpm项目
-
-4. pnpm -i -D vue vuepress@next vuepress-theme-hope sass-embedded // 使用 `-i` 参数下载依赖包 使用 `-D` 参数标记为"依赖"以保证项目可移动
-
-5. vi .gitignore // 添加.gitignore文件
-写入以下内容 // 注意：将\<docs>替换为项目文件根目录 默认为src
-```
-<docs>/.temp
-<docs>/.cache
-<docs>/dist
-node-modules
-```
-
-
-
-6. pnpm create vuepress-theme-hope \<new-proj> //可自定义项目名
-
-7. 项目初始化成功！
-如果选择立即启动开发服务器，请在本地浏览器访问http://localhost:8080
-后续开发以及项目介绍请看[项目命令](https://theme-hope.vuejs.press/zh/get-started/command.html)
-
-
+[VuepressThemeHope - 快速上手](https://theme-hope.vuejs.press/zh/get-started/)
 
 ### 添加自动构建部署文件
 
@@ -46,16 +18,28 @@ node-modules
 >以github github-pages为例
 
 1. 设置正确的 [base](https://vuejs.press/zh/reference/config.html#base) 选项。
-如果你准备发布到 `https://<USERNAME>.github.io/` ，你可以省略这一步，因为 `base` 默认就是 `"/"` 。
-如果你准备发布到 `https://<USERNAME>.github.io/<REPO>/` ，也就是说你的仓库地址是 `https://github.com/<USERNAME>/<REPO>` ，则将 `base` 设置为 `"/<REPO>/"`。
+::: tabs#base
+
+@tab 发布到`https://<USERNAME>.github.io/`
+
+你可以省略这一步，因为 `base` 默认就是 `"/"` 。
+
+
+@tab 发布到`https://<USERNAME>.github.io/<REPO>/`
+
+假设你的仓库地址是 `https://github.com/<USERNAME>/<REPO>`
+则将 `base` 设置为 `"/<REPO>/"`
+
+:::
+
 
 2. 使用 Github Actions 以实现自动部署
-创建 .github/workflows/docs.yml 文件来配置工作流。
+创建 `.github/workflows/docs.yml` 文件来配置工作流。
 
 
 :::details 点击展开配置样例
 
-```yaml
+``` yaml
 name: docs
 
 on:
@@ -118,27 +102,27 @@ jobs:
 
 ### 默认配置文件
 
-- 目录：\<docs>/.vuepress/*.ts
+- 目录：`<docs>/.vuepress/*.ts`
 - 结构：
-  config.ts
-  ```ts
+  `config.ts`
+  ``` ts
   import theme from "./theme.js"
   ```
-  theme.ts 
-  ```ts
+  `theme.ts`
+  ``` ts
   import navbar from "./navbar.js";
   import sidebar from "./sidebar.js"
   ```
 - 配置方法：
-在`theme.ts`中配置 **除navbar和sidebar外** 的主题配置
-在`navbar.ts`中配置导航栏配置
-在`sidebar.ts`中配置侧边栏配置
+在 `theme.ts` 中配置 **除navbar和sidebar外** 的主题配置
+在 `navbar.ts` 中配置导航栏配置
+在 `sidebar.ts` 中配置侧边栏配置
 
 ## 侧边栏开发
 
 - 默认配置文件目录：\<docs>/.vuepress/sidebar.ts
 - 结构：
-```ts
+``` ts
 export default sidebar({
   "/": [ // "/"指在所有页面显示该侧边栏(可被其他配置覆盖)
     "", // 主页
@@ -160,19 +144,19 @@ export default sidebar({
 })
 ```
 - 若要按目录结构自动生成侧边栏，将侧边栏数组替换为"structure"即可
-```ts
+``` ts
 "/": "structure",
 {text: "***", prefix: "fuck/", link: "fuck/", children: "structure"}
 ```
 
 ## 导航栏开发
 
-- 默认配置文件目录：\<docs>/.vuepress/navbar.ts
+- 默认配置文件目录：`<docs>/.vuepress/navbar.ts`
 
 
 
 ## 更多信息
 >[!warning]
 >如何更改项目文件根目录：
->将所有配置文件中的"src"全部改为\<docs>
->配置文件包含package.json, tsconfig.json, .gitignore, \<docs>/.vuepress/config.ts, \<docs>/.vuepress/navbar.ts, \<docs>/.vuepress/sidebar.ts, \<docs>/.vuepress/theme.ts, .github/workflows/deploy-docs.yml等
+>将所有配置文件中的 `src` 全部改为 `<docs>`
+>配置文件包含 `package.json`, `tsconfig.json`, `.gitignore`, `<docs>/.vuepress/config.ts`, `<docs>/.vuepress/navbar.ts`, `<docs>/.vuepress/sidebar.ts`, `<docs>/.vuepress/theme.ts`, `.github/workflows/deploy-docs.yml`等
