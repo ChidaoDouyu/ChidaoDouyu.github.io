@@ -6,6 +6,7 @@ import ENnavbar from "./ennavbar.js";
 import ENsidebar from "./ensidebar.js";
 
 export default hopeTheme({
+
   // 多语言配置
   locales: {
     // 英语
@@ -17,6 +18,7 @@ export default hopeTheme({
       sidebar: ENsidebar,
     }
   },
+
   hostname: "http://blog.puremcs.top",
 
   author: {
