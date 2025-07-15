@@ -1,6 +1,7 @@
 ---
 article: true
 title: AI大模型翻译Ren'py游戏流程
+cover: http://pic.puremcs.top:40027/i/2025/07/16/6876cb9a5afd1.jpg
 ---
 
 > [!important]
@@ -17,6 +18,7 @@ title: AI大模型翻译Ren'py游戏流程
 推翻人机统治！世界属于熟肉！
 
 本方法无需破坏游戏源代码，仅需自行添加一个多语言选项或入口即可！
+<!-- more -->
 
 这篇文章真的凝结了许多心血，笔者花了40h、将近1k才摸到门道，
 废了的四十多行，是探索了一天两夜的旧方案，第三天起床重新检索才找到了通用的工具。。。
@@ -26,7 +28,6 @@ title: AI大模型翻译Ren'py游戏流程
 <share />
 
 代做可以[E-mail](mailto:chidao_douyu@foxmail.com)笔者哦~
-<!-- more -->
 
 ## 基本步骤
 并非详细教程、浏览一遍做到心中有数即可

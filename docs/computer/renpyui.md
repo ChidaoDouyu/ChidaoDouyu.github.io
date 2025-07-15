@@ -1,6 +1,5 @@
 ---
-article: true
-
+article: false
 index: false # 不在侧边栏显示
 title: Ren'py定制UI添加多语言入口方法
 ---
