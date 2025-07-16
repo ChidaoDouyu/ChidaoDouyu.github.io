@@ -224,7 +224,7 @@ cover: http://pic.puremcs.top:40027/i/2025/07/07/686ba75c03ad2.png
 `docker network list` 列出所有子网
 `docker network create <name>` 创建子网
 `docker network rm <name>` 删除指定子网
-> [!info]
+> [!note]
 > - 桥接模式(默认)
 > Docker容器默认网络均为桥接模式
 > 容器网络空间与宿主机隔离
@@ -234,47 +234,6 @@ cover: http://pic.puremcs.top:40027/i/2025/07/07/686ba75c03ad2.png
 > 容器共享宿主机的网络环境，无需映射端口即可直接访问容器
 > - none模式
 > 不联网
-
-
-#### 镜像制作
-1. **编写配置**
-在根目录创建文件`Dockerfile`
-内容模板
-``` Dockerfile
-FROM python:3.13-slim
-// 基础镜像 
-
-WORKDIR /app
-// 设定工作目录
-
-COPY . .
-// 将第一个目录中的文件复制到第二个目录中
-
-RUN pip install -r requirements.txt
-// 安装指定依赖
-
-EXPOSE 8000
-// 声明服务端口(非强制)
-
-CMD ["python3","main.py"]
-// 设定容器启动时运行的命令，一个dockerfile中只能有一个CMD
-// 相应地，还有ENTRYPOINT命令，该命令优先级更高，不容易被覆盖
-```
-
-2. **构建镜像**
-在项目根目录执行 `docker build -t my_python_image:1.0.0 .`
-> `-t my_python_image:1.0.0` 指定镜像名称和版本号
-> `.` 指定构建目录
-
-3. **向DockerHub推送镜像**
-执行 `docker login` 并按要求到浏览器输入验证码登录
-执行 `docker push <namespace>/<image>` 推送镜像
-> [!warning]
-> 注意：在为镜像命名时须命名为 `namespace/image` 的形式  
-
-#### Docker Compose
-一种扩展性强的多容器编排技术。
-详情请自行查询。
 
 
 ### MySQL
