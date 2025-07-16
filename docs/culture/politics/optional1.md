@@ -1,5 +1,5 @@
 ---
-article: true
+article: false
 title: 选必一 当代国际政治与经济
 ---
 

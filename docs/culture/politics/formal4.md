@@ -1,5 +1,5 @@
 ---
-article: true
+article: false
 title: 必修四 哲学与文化
 ---
 

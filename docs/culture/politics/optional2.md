@@ -1,5 +1,5 @@
 ---
-article: true
+article: false
 title: 选必二 法律与生活
 ---
 

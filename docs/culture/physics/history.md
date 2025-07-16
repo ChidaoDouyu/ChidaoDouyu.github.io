@@ -1,5 +1,5 @@
 ---
-article: true
+article: false
 title: 物理学史
 ---
 
