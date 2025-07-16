@@ -179,7 +179,8 @@ cover: http://pic.puremcs.top:40027/i/2025/07/07/686ba75c03ad2.png
 注：大部分Docker命令都需要sudo权限
 #### 镜像管理
 `docker pull <registry>/<namespace>/<image>:<version>` 拉取镜像
-> `--platform=arm64` 指定CPU架构  
+> `--platform=arm64` 指定CPU架构
+
 `docker images` 列出所有镜像
 `docker rmi <image>` 删除指定镜像
 
