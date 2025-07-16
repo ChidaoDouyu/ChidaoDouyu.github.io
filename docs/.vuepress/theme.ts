@@ -192,19 +192,12 @@ export default hopeTheme({
     },
 
 
-    // comment: {
-    //   provider: "Giscus",
-    //   repo: "ChidaoDouyu/ChidaoDouyu.github.io",
-    //   repoId: "R_kgDOM90dcw",
-    //   category: "Announcements",
-    //   categoryId: "DIC_kwDOM90dc84CjY2L",
-    // },
-    
     comment: {
-      provider: "Waline",
-      serverURL: "http://blog.puremcs.top:8360", //:8360
-      dark: "auto",
-      emoji: ['//unpkg.com/@waline/emojis@1.1.0/weibo','https://unpkg.com/@waline/emojis@1.2.0/alus','https://unpkg.com/@waline/emojis@1.2.0/bilibili','https://unpkg.com/@waline/emojis@1.2.0/bmoji','https://unpkg.com/@waline/emojis@1.2.0/qq','https://unpkg.com/@waline/emojis@1.2.0/tieba','https://unpkg.com/@waline/emojis@1.2.0/tw-emoji','https://unpkg.com/@waline/emojis@1.2.0/weibo','https://unpkg.com/@waline/emojis@1.2.0/soul-emoji'],
+      provider: "Giscus",
+      repo: "ChidaoDouyu/ChidaoDouyu.github.io",
+      repoId: "R_kgDOM90dcw",
+      category: "Announcements",
+      categoryId: "DIC_kwDOM90dc84CjY2L",
     },
 
     icon: {
