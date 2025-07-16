@@ -7,7 +7,7 @@ comment: false
 ---
 # 网页搭建经验
 
-> [!warning]
+> [!caution]
 > 本页面尚未编辑完成
 
 尚未施工

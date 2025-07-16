@@ -7,7 +7,7 @@ title: Git Tutorial
 > This tutorial is only for people who has the code basis.
 > For any consequence, the author is not responsible.
 
-> [!warning]
+> [!caution]
 > This page haven't been completed.
 
 This article provides part of using tutorial and command explaination for Git.

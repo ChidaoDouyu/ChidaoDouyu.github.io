@@ -7,5 +7,5 @@ comment: false
 
 # 数学
 
-> [!warning]
+> [!caution]
 > 本页面尚未编辑完成

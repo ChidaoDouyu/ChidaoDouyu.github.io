@@ -7,5 +7,5 @@ comment: false
 
 # 英语
 
-> [!warning]
+> [!caution]
 > 本页面尚未编辑完成

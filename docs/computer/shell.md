@@ -10,7 +10,7 @@ cover: http://pic.puremcs.top:40027/i/2025/07/07/686ba75c03ad2.png
 > [!info]
 > 测试系统版本为Debian12
 
-> [!warning]
+> [!caution]
 > 本文随作者使用而更新
 
 <!-- more -->

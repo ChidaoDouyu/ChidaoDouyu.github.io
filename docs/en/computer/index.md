@@ -8,5 +8,5 @@ title: Computer
 ---
 
 
-> [!warning]
+> [!caution]
 > This page haven't been completed.

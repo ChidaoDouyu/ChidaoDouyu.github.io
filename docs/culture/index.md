@@ -7,5 +7,5 @@ comment: false
 
 # 高中文化课
 
-> [!warning]
+> [!caution]
 > 本页面尚未编辑完成

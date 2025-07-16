@@ -8,5 +8,5 @@ comment: false
 
 # 物理
 
-> [!warning]
+> [!caution]
 > 本页面尚未编辑完成

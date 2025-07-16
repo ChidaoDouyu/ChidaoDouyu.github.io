@@ -8,5 +8,5 @@ title: 计算机经验
 ---
 
 
-> [!warning]
+> [!caution]
 > 本页面尚未编辑完成

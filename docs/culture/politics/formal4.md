@@ -3,7 +3,7 @@ article: true
 title: 必修四 哲学与文化
 ---
 
-> [!warning]
+> [!caution]
 > 本页面尚未编辑完成
 > 暂无更新计划
 

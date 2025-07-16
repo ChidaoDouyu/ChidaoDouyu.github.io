@@ -4,7 +4,7 @@ index: false # 不在侧边栏显示
 title: Ren'py定制UI添加多语言入口方法
 ---
 
-> [!warning]
+> [!caution]
 > 本页面尚未编辑完成
 
 是不是还在为看不懂英文，啃不动生肉而发愁？
