@@ -1,5 +1,6 @@
 ---
 article: true
+index: false # 不在侧边栏显示
 title: B站直播姬分区遮罩解决办法
 order: -998
 ---
