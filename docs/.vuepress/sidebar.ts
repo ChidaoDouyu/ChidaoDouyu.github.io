@@ -10,17 +10,15 @@ export default sidebar({
       link: "culture/",
       children: [
         // { text: "数学", link: "maths/" },
-        // { text: "语文", link: "chinese/" },
         // { text: "英语", link: "english/" },
         { text: "物理", link: "physics/" },
-        // { text: "化学", link: "chemistry/" },
         { text: "思想政治", link: "politics/" },
       ],
     },
     {
-      text: "网页搭建经验",
+      text: "代码经验",
       icon: "fas fa-globe",
-      prefix: "webbuild/",
+      prefix: "code/",
       link: "code/",
       children: "structure",
     },
@@ -37,46 +35,32 @@ export default sidebar({
       prefix: "other/", 
       link: "other/",
       children: "structure",
-    
     },
     { text: "个人介绍", icon: "fas fa-circle-info", link: "intro" },
   ],
 
   "/culture/politics/": [
     { text: "主页", icon: "fas fa-home", link: "/" },
+    { text: "返回上级目录", link: "/culture/"},
     {
-      text: "高中文化课",
-      icon: "fas fa-book-open",
-      // link: "/culture/",
+      text: "思想政治",
+      link: "/culture/politics/",
       children: [
-        { text: "返回上级目录", link: "back"},
-        { text: "思想政治", link: "/culture/politics/" }
+        { text: "必修三 政治与法治", link: "formal3" },
+        { text: "必修四 哲学与文化", link: "formal4" },
+        { text: "选必一 当代国际政治与经济", link: "optional1" },
+        { text: "选必二 法律与生活", link: "optional2" },
+        { text: " 选必三 逻辑与思维", link: "optional3" },
       ],
     },
-    { text: "必修一 中国特色社会主义", link: "formal1" },
-    { text: "必修二 经济与社会", link: "formal2" },
-    { text: "必修三 政治与法治", link: "formal3" },
-    { text: "必修四 哲学与文化", link: "formal4" },
-    { text: "选必一 当代国际政治与经济", link: "optional1" },
-    { text: "选必二 法律与生活", link: "optional2" },
-    { text: "选必三 逻辑与思维", link: "optional3" },
   ],
   "/culture/physics/": [
     { text: "主页", icon: "fas fa-home", link: "/" },
+    { text: "返回上级目录", link: "/culture/"},
     {
-      text: "高中文化课",
-      icon: "fas fa-book-open",
-      // link: "/culture/",
-      children: [
-        { text: "返回上级目录", link: "back"},
-        { text: "物理", link: "/culture/physics/" }
-      ],
+      text: "物理",
+      link: "/culture/physics/",
+      children: "structure",
     },
-    "history"
-  ],
-  // "webbuild/":[
-  //   "/",
-  //   "",
-  //   {text: "Vuepress-Theme-Hope", link:"vuepressthemehope"}
-  // ],
+  ]
 });
