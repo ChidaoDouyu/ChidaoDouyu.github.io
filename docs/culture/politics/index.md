@@ -3,6 +3,7 @@ article: false
 pageInfo: false
 lastUpdated: false
 comment: false
+index: false
 ---
 
 # 思想政治
