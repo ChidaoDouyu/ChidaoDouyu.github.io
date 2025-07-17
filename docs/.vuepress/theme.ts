@@ -201,7 +201,10 @@ export default hopeTheme({
     },
 
     icon: {
-      assets: ["fontawesome-with-brands","fontawesome","iconify"]
+      assets: [
+        "fontawesome-with-brands", 
+        "fontawesome"
+      ]
     },
 
     components: {
