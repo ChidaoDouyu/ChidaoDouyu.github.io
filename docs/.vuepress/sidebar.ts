@@ -7,7 +7,7 @@ export default sidebar({
       text: "高中文化课",
       icon: "fas fa-book-open",
       prefix: "culture/",
-      link: "culture/",
+      // link: "culture/",
       children: [
         // { text: "数学", link: "maths/" },
         // { text: "语文", link: "chinese/" },
@@ -21,21 +21,21 @@ export default sidebar({
       text: "网页搭建经验",
       icon: "fas fa-globe",
       prefix: "webbuild/",
-      link: "webbuild/",
+      // link: "webbuild/",
       children: "structure",
     },
     {
       text: "计算机经验",
       icon: "fas fa-laptop",
       prefix: "computer/",
-      link: "computer/",
+      // link: "computer/",
       children: "structure",
     },
     { 
       text: "其他文章", 
       icon: "fas fa-file-lines", 
       prefix: "other/", 
-      link: "other/",
+      // link: "other/",
       children: "structure",
     
     },
@@ -47,9 +47,9 @@ export default sidebar({
     {
       text: "高中文化课",
       icon: "fas fa-book-open",
-      link: "/culture/",
+      // link: "/culture/",
       children: [
-        { text: ".  .  .", link: "/culture/"},
+        { text: "返回上级目录", link: "back"},
         { text: "思想政治", link: "/culture/politics/" }
       ],
     },
@@ -66,9 +66,9 @@ export default sidebar({
     {
       text: "高中文化课",
       icon: "fas fa-book-open",
-      link: "/culture/",
+      // link: "/culture/",
       children: [
-        { text: ".  .  .", link: "/culture/"},
+        { text: "返回上级目录", link: "back"},
         { text: "物理", link: "/culture/physics/" }
       ],
     },
