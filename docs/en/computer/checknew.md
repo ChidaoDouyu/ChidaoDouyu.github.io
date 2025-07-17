@@ -34,6 +34,7 @@ AIDA64 was used for CPU and memory stress tests, and Furmark was used for graphi
 At the same time, CoreTemp is used to detect the CPU temperature and GPUZ is used to detect the temperature of the graphics card.
 Purpose: Detect whether the heat dissipation is inconsistent with the media machine, detect whether the cooling fan is damaged and idling or does not rotate, detect whether there are stability problems such as overheating and desoldering, and whether the factory silicone grease is clear.
 It's a bit of a pain in the game, but it's only going to happen this once, and it's much more effective and meaningful than measuring the machine through game performance later.
+
 > [!tip]
 > There is no temperature record in the CPUZ, so a CoreTemp is required, while the temperature detection of the GPUZ is recorded in the "Advanced" tab, which can be found with a little closer inspection.
 > After opening the oven software, put them in the front desk to keep an eye on them at all times.

@@ -48,7 +48,7 @@ export default hopeTheme({
     gfm: true,
 
     // 支持github风格的警告容器
-    // alert: true,
+    alert: true,
 
     // 支持荧光笔标记 ==xxx==
     mark: true,

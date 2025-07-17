@@ -149,9 +149,9 @@ cover: http://pic.puremcs.top:40027/i/2025/07/16/6876cb9a5afd1.jpg
     - 尽量使用同时包含中文、英文和符号的字体！
 3. 将下好的字体放到汉化包的 `game/fonts` 目录
 
-> [!caution]
-> 从此开始的以下方案仅在部分游戏中可行，我付费使用了 kyoxb 的方案
-> 如需要该方案，请 [email联系](mailto:kyoxb2@163.com)
+	> [!caution]
+	> 从此开始的以下方案仅在部分游戏中可行，我付费使用了 kyoxb 的方案
+	> 如需要该方案，请 [email联系](mailto:kyoxb2@163.com)
 
 4. 在汉化包中递归创建 `game/tl/zhCN/style.rpy`
 5. 在游戏 `unrpy` 副本的 `game` 目录中搜索 `font`
@@ -173,8 +173,9 @@ translate zhCN style 模块名:
 2. 复制 `screens.rpy` 到汉化包 `game` 目录下
 3. 编辑汉化包内的 `screens.rpy`
 4. 对照游戏内的设置页，寻找到相应的代码位置
-> [!tip]
-> 如果该文件内容超过了500行，那大概率是定制ui，有需要可以[e-mail笔者](mailto:chidao_douyu@foxmail.com)询问
+
+	> [!tip]
+	> 如果该文件内容超过了500行，那大概率是定制ui，有需要可以[e-mail笔者](mailto:chidao_douyu@foxmail.com)询问
 
 5. 在合适的位置添加如下代码并保存
 ```
@@ -216,16 +217,17 @@ textbutton _("Chinese") action Language("zhCN")
 第三方：OhMyGPT(免审查)
 **国产大模型以及国内服务商提供的API请注意审查问题！**
 2. 充值一定数额以免无效挂机
-> [!note]
-> 经多次调试，作者最终使用的供应商及模型信息如下
-> 供应商：[OhMyGPT](https://www.ohmygpt.com?aff=CH7alyZM)
-> 模型名称：`ark-deepseek-r1-250528` & `gpt-4o`
->
-> ---
-> 经测试，得出以下结论：
-> `gpt-4o` 翻译质量最高，但价格相应也极高
-> `gpt-3.5` & `gpt-4o-mini` 等模型翻译质量较低, 但价格低
-> `DeepSeek R1` 翻译质量一般、价格极低
+
+	> [!note]
+	> 经多次调试，作者最终使用的供应商及模型信息如下
+	> 供应商：[OhMyGPT](https://www.ohmygpt.com?aff=CH7alyZM)
+	> 模型名称：`ark-deepseek-r1-250528` & `gpt-4o`
+	>
+	> ---
+	> 经测试，得出以下结论：
+	> `gpt-4o` 翻译质量最高，但价格相应也极高
+	> `gpt-3.5` & `gpt-4o-mini` 等模型翻译质量较低, 但价格低
+	> `DeepSeek R1` 翻译质量一般、价格极低
 
 ### 添加API
 1. 记下大模型服务商提供的代理地址及秘钥
@@ -287,6 +289,7 @@ textbutton _("Chinese") action Language("zhCN")
 
 11. 点击开始翻译
 点击窗口右下角 `↑` 图标以打开/关闭翻译信息页
+
     > [!important]
     > 若中途电脑关机或API报错，请不要随意修改文件
     > 直接重启AiNiee，直接加载上一次的目录后点击 `继续` 即可保留进度继续翻译
