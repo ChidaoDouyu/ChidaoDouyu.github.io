@@ -61,7 +61,7 @@ export default hopeTheme({
     spoiler: true,
 
     // 支持图片描述
-    figure: true,
+    // figure: true,
 
     // 图片懒加载
     imgLazyload: true,
