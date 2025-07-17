@@ -1,6 +1,7 @@
 ---
 article: false
 title: 必修三 政治与法治
+order: 3
 ---
 高中思想政治必修三政治与法治知识总结
 <!-- more -->

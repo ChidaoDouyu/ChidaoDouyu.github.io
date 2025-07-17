@@ -1,6 +1,7 @@
 ---
 article: false
 title: 必修四 哲学与文化
+order: 4
 ---
 
 > [!warning]

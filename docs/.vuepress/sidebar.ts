@@ -45,15 +45,26 @@ export default sidebar({
     {
       text: "思想政治",
       link: "/culture/politics/",
-      children: [
-        { text: "必修三 政治与法治", link: "formal3" },
-        { text: "必修四 哲学与文化", link: "formal4" },
-        { text: "选必一 当代国际政治与经济", link: "optional1" },
-        { text: "选必二 法律与生活", link: "optional2" },
-        { text: " 选必三 逻辑与思维", link: "optional3" },
-      ],
+      children: "structure",
     },
   ],
+
+  // "/culture/politics/": [
+  //   { text: "主页", icon: "fas fa-home", link: "/" },
+  //   { text: "返回上级目录", link: "/culture/"},
+  //   {
+  //     text: "思想政治",
+  //     link: "/culture/politics/",
+  //     children: [
+  //       { text: "必修三 政治与法治", link: "formal3" },
+  //       { text: "必修四 哲学与文化", link: "formal4" },
+  //       { text: "选必一 当代国际政治与经济", link: "optional1" },
+  //       { text: "选必二 法律与生活", link: "optional2" },
+  //       { text: " 选必三 逻辑与思维", link: "optional3" },
+  //     ],
+  //   },
+  // ],
+  
   "/culture/physics/": [
     { text: "主页", icon: "fas fa-home", link: "/" },
     { text: "返回上级目录", link: "/culture/"},
