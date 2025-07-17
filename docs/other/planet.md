@@ -4,10 +4,10 @@ title: 占星笔记
 cover: http://pic.puremcs.top:40027/i/2025/07/10/686ebe6ac3c4b.jpg
 ---
 
-> [!caution]
+> [!warning]
 > 本文章涉及封建迷信，仅供参考，请依据客观规律行事。作者保留一切权利。
 
-> [!caution]
+> [!warning]
 > 本页面尚未编辑完成
 
 一些西方玄学、占星知识

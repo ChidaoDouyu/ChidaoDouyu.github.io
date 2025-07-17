@@ -3,7 +3,7 @@ article: false
 title: 选必三 逻辑与思维
 ---
 
-> [!caution]
+> [!warning]
 > 本页面尚未编辑完成
 > 已无更新计划
 

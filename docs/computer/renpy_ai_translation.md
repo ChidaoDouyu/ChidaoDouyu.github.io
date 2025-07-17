@@ -8,7 +8,7 @@ cover: http://pic.puremcs.top:40027/i/2025/07/16/6876cb9a5afd1.jpg
 > 本文章具有时效性
 > 请关注笔者使用的工具版本、游戏版本
 
-> [!warning]
+> [!caution]
 > 不要在原游戏目录下操作！
 
 是不是还在为看不懂英文，啃不动生肉而发愁？
@@ -149,7 +149,7 @@ cover: http://pic.puremcs.top:40027/i/2025/07/16/6876cb9a5afd1.jpg
     - 尽量使用同时包含中文、英文和符号的字体！
 3. 将下好的字体放到汉化包的 `game/fonts` 目录
 
-	> [!caution]
+	> [!warning]
 	> 从此开始的以下方案仅在部分游戏中可行，我付费使用了 kyoxb 的方案
 	> 如需要该方案，请 [email联系](mailto:kyoxb2@163.com)
 

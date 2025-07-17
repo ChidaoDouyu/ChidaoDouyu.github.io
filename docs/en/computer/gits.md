@@ -3,11 +3,11 @@ article: true
 title: Git Tutorial
 --- 
 
-> [!caution]
+> [!warning]
 > This tutorial is only for people who has the code basis.
 > For any consequence, the author is not responsible.
 
-> [!caution]
+> [!warning]
 > This page haven't been completed.
 
 This article provides part of using tutorial and command explaination for Git.

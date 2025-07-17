@@ -4,7 +4,7 @@ title: Profile
 ---
 
 
-> [!caution]
+> [!warning]
 > This page haven't been completed.
 
 Hey guys, I'm Chidao!

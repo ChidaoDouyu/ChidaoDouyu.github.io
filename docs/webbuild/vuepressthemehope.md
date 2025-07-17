@@ -4,7 +4,7 @@
 >本文仅供有一定代码基础的学习者！
 >遇见不懂的指令请自行搜索
 
-> [!caution]
+> [!warning]
 > 本页面将随开发而更新
 
 ## 项目初始化
@@ -156,7 +156,7 @@ export default sidebar({
 
 
 ## 更多信息
->[!caution]
+>[!warning]
 >如何更改项目文件根目录：
 >将所有配置文件中的 `src` 全部改为 `<docs>`
 >配置文件包含 `package.json`, `tsconfig.json`, `.gitignore`, `<docs>/.vuepress/config.ts`, `<docs>/.vuepress/navbar.ts`, `<docs>/.vuepress/sidebar.ts`, `<docs>/.vuepress/theme.ts`, `.github/workflows/deploy-docs.yml`等

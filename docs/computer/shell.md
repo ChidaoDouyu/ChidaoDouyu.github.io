@@ -4,14 +4,14 @@ title: Linux命令教程
 cover: http://pic.puremcs.top:40027/i/2025/07/07/686ba75c03ad2.png
 ---
 
-> [!caution]
+> [!warning]
 > 本教程仅供具有一定代码基础的爱好者学习借鉴
 > 对于执行任何操作所造成的后果, 作者不予负责
 
 > [!info]
 > 测试系统版本为Debian12
 
-> [!caution]
+> [!warning]
 > 本文随作者使用而更新
 
 <!-- more -->
