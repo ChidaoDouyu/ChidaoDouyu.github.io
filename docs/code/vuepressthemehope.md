@@ -155,6 +155,31 @@ export default sidebar({
 
 - 默认配置文件目录：`<docs>/.vuepress/navbar.ts`
 
+## 编写方法
+### 折叠框
+实现：vuepress-theme-hope 自带的提示容器
+配置：`theme.markdown.hint: true`
+示例：
+:::details 点击展开配置样例
+```
+import { hopeTheme } from "vuepress-theme-hope";
+
+export default hopeTheme({
+  markdown: {
+    // 禁用提示容器
+    hint: false,
+  },
+});
+```
+:::
+语法：
+```
+::: details 自定义标题
+content
+:::
+```
+详细信息见[Vuepress-theme-hope-指南-提示容器](https://theme-hope.vuejs.press/zh/guide/markdown/stylize/hint.html)
+
 
 
 ## 更多信息
