@@ -70,7 +70,9 @@ export default hopeTheme({
     imgMark: true,
 
     // 支持数学公式 默认使用katex/mathjax
-    math: true,
+    math: {
+      type: "katex",
+    },
 
     // 支持plantuml图表
     plantuml: true,
