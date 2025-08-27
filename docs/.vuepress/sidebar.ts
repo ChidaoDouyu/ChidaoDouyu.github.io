@@ -73,5 +73,14 @@ export default sidebar({
       link: "/culture/physics/",
       children: "structure",
     },
+  ],
+  "/culture/maths/": [
+    { text: "主页", icon: "fas fa-home", link: "/" },
+    { text: "返回上级目录", link: "/culture/"},
+    {
+      text: "数学",
+      link: "/culture/maths/",
+      children: "structure",
+    },
   ]
 });

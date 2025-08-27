@@ -7,7 +7,8 @@ export default navbar([
     icon: "pen-to-square",
     prefix: "culture/",
     children:[
-      {text:"物理", link:"physics/"},
+      {text: "数学", link: "maths/"},
+      {text: "物理", link: "physics/"},
       {text: "思想政治", link: "politics/"}
     ],
   },
