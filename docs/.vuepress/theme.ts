@@ -192,6 +192,7 @@ export default hopeTheme({
     //     comment: false
     //   })
     // },
+
     catalog: {
       frontmatter: (path) => {
         if (path.startsWith("/en/")) return { title: "Catalog", pageInfo: false, lastUpdated: false, comment: false };
@@ -201,7 +202,6 @@ export default hopeTheme({
       },
       
     },
-
 
     comment: {
       provider: "Giscus",
