@@ -180,6 +180,8 @@ content
 ```
 详细信息见[Vuepress-theme-hope-指南-提示容器](https://theme-hope.vuejs.press/zh/guide/markdown/stylize/hint.html)
 
+## 更新
+`pnpm update --latest`
 
 
 ## 更多信息
