@@ -20,7 +20,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: 下载ssh秘钥
         uses: shimataro/ssh-key-action@v2
@@ -38,20 +38,23 @@ jobs:
           cat ./known_hosts
           cat ./id_rsa
 
-      - name: 设置 pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 10
+      # - name: 设置 pnpm
+      #   uses: pnpm/action-setup@v4
+      #   with:
+      #     version: 10
 
       - name: 安装Node.js
         # 使用action库  actions/setup-node安装node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: 22.x
 
+      - name: 安装pnpm
+        run: npm install -g pnpm
+
       # 安装依赖
       - name: 安装依赖
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       # 构建
       - name: 构建
