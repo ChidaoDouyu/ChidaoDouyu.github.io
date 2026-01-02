@@ -1,4 +1,7 @@
-# Vuepress-Theme-Hope 搭建记录
+---
+article: true
+title: Vuepress-Theme-Hope 搭建记录
+---
 
 >[!info]
 >本文仅供有一定代码基础的学习者！

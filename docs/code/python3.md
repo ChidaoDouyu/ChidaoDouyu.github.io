@@ -1,6 +1,7 @@
 ---
 article: true
 title: Python教程
+cover: http://pic.puremcs.top/i/2026/01/02/6957ab19664bd.png
 ---
 
 > [!warning]

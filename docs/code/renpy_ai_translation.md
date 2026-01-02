@@ -1,7 +1,7 @@
 ---
 article: true
 title: AI大模型翻译Ren'py游戏流程
-cover: http://pic.puremcs.top:40027/i/2025/07/16/6876cb9a5afd1.jpg
+cover: http://pic.puremcs.top/i/2025/07/16/6876cb9a5afd1.jpg
 ---
 
 > [!important]
@@ -83,20 +83,20 @@ cover: http://pic.puremcs.top:40027/i/2025/07/16/6876cb9a5afd1.jpg
 ## 解包
 1. 启动Renpy Translator
 2. 选择 `高级选项` -> `解压游戏包`
-![导航](http://pic.puremcs.top:40027/i/2025/07/16/687698f7bb631.png)
+![导航](http://pic.puremcs.top/i/2025/07/16/687698f7bb631.png)
 3. 确认文件文本框为空
 将游戏 `unrpy` 副本的可执行程序拖动到文件白框中
 并再次确认白框中是否仅有刚刚选中的 `.exe` 文件
 4. 勾选下方全部三个复选框
 5. 点击 `解包`
-![解包](http://pic.puremcs.top:40027/i/2025/07/16/687699e7885a5.png)
+![解包](http://pic.puremcs.top/i/2025/07/16/687699e7885a5.png)
 6. 等待解包完成
 期间不要移动修改任何文件
 7. **检查日志**
 解包完成后，程序会留下两个窗口，分别是原窗口以及日志
 查看日志中是否打印有失败的任务，如图
 若有失败，点击 `使用资源管理器查找日志文件` 
-![日志](http://pic.puremcs.top:40027/i/2025/07/16/68769a32ce310.png)
+![日志](http://pic.puremcs.top/i/2025/07/16/68769a32ce310.png)
 8. (可选)查看失败日志
     1. 打开日志文件
     2. 找到最新一次解包的日志
@@ -110,7 +110,7 @@ cover: http://pic.puremcs.top:40027/i/2025/07/16/6876cb9a5afd1.jpg
 ### 官方提取翻译文本
 1. 关闭解包窗口，回到Ren'py翻译器主界面
 2. 选择 `高级选项` -> `官方提取`
-![导航](http://pic.puremcs.top:40027/i/2025/07/16/68769a9046c68.png)
+![导航](http://pic.puremcs.top/i/2025/07/16/68769a9046c68.png)
 3. 将游戏 `unrpy` 副本的 `.exe` 文件拖动到文件白框中
 4. 填写 `game/tl` 名称，翻译为简体中文即可写为zhCN
 注意：本名称必须是唯一的
@@ -119,7 +119,7 @@ cover: http://pic.puremcs.top:40027/i/2025/07/16/6876cb9a5afd1.jpg
 标签格式为 `translate 标签 file_aaaaaa:`
 5. 勾选下方复选框
 6. 点击 `抽取`
-![抽取](http://pic.puremcs.top:40027/i/2025/07/16/68769bddb921f.png)
+![抽取](http://pic.puremcs.top/i/2025/07/16/68769bddb921f.png)
 7. 等待抽取完成
 8. 观察到主页面右侧日志中打印 `official extraction complete!` 即代表抽取成功完成
 
@@ -159,7 +159,7 @@ cover: http://pic.puremcs.top:40027/i/2025/07/16/6876cb9a5afd1.jpg
 > 注意：部分特殊字形的字体不要替换！！！
 > 如：`triangle` 等...
 
-![搜索](http://pic.puremcs.top:40027/i/2025/07/16/68769da99a147.png)
+![搜索](http://pic.puremcs.top/i/2025/07/16/68769da99a147.png)
 7. 统一修改为如下形式
 ``` py
 translate zhCN python:

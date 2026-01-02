@@ -1,7 +1,7 @@
 ---
 article: true
 title: 占星笔记
-cover: http://pic.puremcs.top:40027/i/2025/07/10/686ebe6ac3c4b.jpg
+cover: http://pic.puremcs.top/i/2025/07/10/686ebe6ac3c4b.jpg
 ---
 
 > [!warning]
