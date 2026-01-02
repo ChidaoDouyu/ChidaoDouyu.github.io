@@ -1,4 +1,7 @@
-# Git教程
+---
+article: true
+title: Git教程
+---
 
 > [!caution]
 > 本教程仅供具有一定代码基础的爱好者学习借鉴

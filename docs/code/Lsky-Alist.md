@@ -2,8 +2,8 @@
 article: true
 index: false # 不在侧边栏显示
 order: -999
+title: 从零开始：Lsky图床配合Alist实现图片上云
 ---
-# 从零开始：Lsky图床配合Alist实现图片上云
 
 > [!caution]
 > 经实测，该流程存在无法调取图片的问题。

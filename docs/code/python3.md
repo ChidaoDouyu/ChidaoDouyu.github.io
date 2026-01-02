@@ -14,6 +14,9 @@ title: Python教程
 > Contribution Welcome! 欢迎贡献！
 > 本教程急需重新排版
 
+<!-- more -->>
+
+
 ## ---变量---
 输出变量类型 `type(变量名)`
 判断变量是否为某类型 `isinstance(变量, 类型)` 返回布尔值
