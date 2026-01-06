@@ -1,6 +1,7 @@
 ---
 article: true
 title: Vuepress-Theme-Hope 搭建记录
+order: 1
 ---
 
 >[!info]

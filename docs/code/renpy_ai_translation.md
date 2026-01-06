@@ -2,6 +2,7 @@
 article: true
 title: AI大模型翻译Ren'py游戏流程
 cover: http://pic.puremcs.top/i/2025/07/16/6876cb9a5afd1.jpg
+order: -1
 ---
 
 > [!important]
