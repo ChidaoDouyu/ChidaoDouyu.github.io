@@ -5,6 +5,8 @@ import sidebar from "./sidebar.js";
 import ENnavbar from "./ennavbar.js";
 import ENsidebar from "./ensidebar.js";
 
+import getCatalogFrontmatter from "./catalogFrontmatter.js";
+
 export default hopeTheme({
 
   // 多语言配置
@@ -147,21 +149,14 @@ export default hopeTheme({
 
 
     // 自动生成目录
-    // catalog: {
-    //   frontmatter: (path) => ({
-    //     pageInfo: false,
-    //     lastUpdated: false,
-    //     comment: false
-    //   })
-    // },
-
     catalog: {
-      frontmatter: (path) => {
-        if (path.startsWith("/en/")) return { title: "Catalog", pageInfo: false, lastUpdated: false, comment: false };
-        if (path.startsWith("/culture/physics/")) return { title:"物理", pageInfo: false, lastUpdated: false, comment: false };
-        if (path.startsWith("/culture/maths/")) return { title:"数学", pageInfo: false, lastUpdated: false, comment: false };
-        return { title: "目录", pageInfo: false, lastUpdated: false, comment: false }
-      },
+      // frontmatter: (path) => {
+      //   if (path.startsWith("/en/")) return { title: "Catalog", pageInfo: false, lastUpdated: false, comment: false };
+      //   if (path.startsWith("/culture/physics/")) return { title:"物理", pageInfo: false, lastUpdated: false, comment: false };
+      //   if (path.startsWith("/culture/maths/")) return { title:"数学", pageInfo: false, lastUpdated: false, comment: false };
+      //   return { title: "目录", pageInfo: false, lastUpdated: false, comment: false }
+      // },
+      frontmatter: getCatalogFrontmatter,
       
     },
 
