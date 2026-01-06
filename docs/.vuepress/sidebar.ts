@@ -1,44 +1,6 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export default sidebar({
-  "/": [
-    { text: "主页", icon: "fas fa-home", link: "/" },
-    {
-      text: "高中文化课",
-      icon: "fas fa-book-open",
-      prefix: "culture/",
-      link: "culture/",
-      children: [
-        // { text: "数学", link: "maths/" },
-        // { text: "英语", link: "english/" },
-        { text: "物理", link: "physics/" },
-        { text: "思想政治", link: "politics/" },
-      ],
-    },
-    {
-      text: "代码经验",
-      icon: "fas fa-globe",
-      prefix: "code/",
-      link: "code/",
-      children: "structure",
-    },
-    {
-      text: "计算机经验",
-      icon: "fas fa-laptop",
-      prefix: "computer/",
-      link: "computer/",
-      children: "structure",
-    },
-    { 
-      text: "其他文章", 
-      icon: "fas fa-file-lines", 
-      prefix: "other/", 
-      link: "other/",
-      children: "structure",
-    },
-    { text: "个人介绍", icon: "fas fa-circle-info", link: "intro" },
-  ],
-
   "/culture/politics/": [
     { text: "主页", icon: "fas fa-home", link: "/" },
     { text: "返回上级目录", link: "/culture/"},
@@ -82,5 +44,42 @@ export default sidebar({
       link: "/culture/maths/",
       children: "structure",
     },
-  ]
+  ],
+  "/": [
+    { text: "主页", icon: "fas fa-home", link: "/" },
+    {
+      text: "高中文化课",
+      icon: "fas fa-book-open",
+      prefix: "culture/",
+      link: "culture/",
+      children: [
+        { text: "数学", link: "maths/" },
+        // { text: "英语", link: "english/" },
+        { text: "物理", link: "physics/" },
+        { text: "思想政治", link: "politics/" },
+      ],
+    },
+    {
+      text: "代码经验",
+      icon: "fas fa-globe",
+      prefix: "code/",
+      link: "code/",
+      children: "structure",
+    },
+    {
+      text: "计算机经验",
+      icon: "fas fa-laptop",
+      prefix: "computer/",
+      link: "computer/",
+      children: "structure",
+    },
+    { 
+      text: "其他文章", 
+      icon: "fas fa-file-lines", 
+      prefix: "other/", 
+      link: "other/",
+      children: "structure",
+    },
+    { text: "个人介绍", icon: "fas fa-circle-info", link: "intro" },
+  ],
 });
