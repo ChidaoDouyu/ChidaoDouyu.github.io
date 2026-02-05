@@ -254,7 +254,7 @@ textbutton _("Chinese") action Language("zhCN")
 5. `翻译提示词` -> `基础提示`, 并填写Prompt
 以下为作者使用的Prompt，亲测稳定性达99.78%
     ```
-    <!-- @include: AiTranslationPrompt.txt -->
+    <!-- @include: assets/AiTranslationPrompt.txt -->
     ```
 6. 将异常识别的字段列入禁翻表中
 7. 将无需翻译的字段配置在术语表中
