@@ -7,7 +7,7 @@ locale: en-US
 heroText: This is ChidaoDouyu's blog
 heroFullScreen: false
 tagline: Otacus saves the world!
-bgImage: /.vuepress/public/background.jpg
+bgImage: background.jpg
 # projects:
 #   - icon: project
 #     name: 项目名称
