@@ -1,7 +1,7 @@
 ---
 article: true
 title: Python教程
-cover: /docs/code/assets/6957ab19664bd.png
+cover: /code/assets/6957ab19664bd.png
 toc: 
   depth: [2,2]
 ---
