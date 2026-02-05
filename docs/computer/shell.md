@@ -1,7 +1,7 @@
 ---
 article: true
 title: Linux命令教程
-cover: http://pic.puremcs.top/i/2025/07/07/686ba75c03ad2.png
+cover: computer/assets/686ba75c03ad2.png
 ---
 
 > [!warning]

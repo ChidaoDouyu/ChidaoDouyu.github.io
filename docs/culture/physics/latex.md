@@ -110,7 +110,7 @@ title: 物理公式
         - 从$OMNPQ$点开始 $s=A$
         - 从$OM$或$NP$段开始 $s<A$
         - 从$MN$或$PQ$段开始 $s>A$ 
-    ![质点图](http://pic.puremcs.top/i/2026/01/05/695ba3fa52eed.png)
+    ![质点图](695ba3fa52eed.png)
 5. 单摆周期公式 $T=2π\sqrt{\frac{L}{g}}$
 6. 单摆求重力加速度 $g={(\frac{4π^2}{T})}^2 L$
 7. 单摆实验

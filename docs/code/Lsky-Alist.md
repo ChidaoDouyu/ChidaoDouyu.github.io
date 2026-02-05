@@ -28,12 +28,14 @@ Alist是一款网盘列表软件。可用于代理网盘，建立本地与网盘
 图源：[Alist官方文档](https://alistgo.com/zh)
 3. 部署结束后，将展示的信息记下(默认端口为5244)。建议直接将随机密码改为常用密码。
 注：离开该页面后也可通过alist命令配置Alist
-![](https://imgse.com/i/pCIdMYq)
-图源: [憨憨博客](https://blog.hanhanz.top)
+图片已失效
+<!-- ![](https://imgse.com/i/pCIdMYq)
+图源: [憨憨博客](https://blog.hanhanz.top) -->
 ### 配置Alist挂载网盘
 4. 在浏览器进入Alist网页。例如：https://example.com:5244
-![](https://imgse.com/i/pCIwRrF)
-图源: [憨憨博客](https://blog.hanhanz.top)
+图片已失效
+<!-- ![](https://imgse.com/i/pCIwRrF)
+图源: [憨憨博客](https://blog.hanhanz.top) -->
 5. 输入第2步记录的账号密码，进入系统。
 图片已失效，停止维护。
 6. 点击下方管理，左侧储存，开始添加新云盘

@@ -1,7 +1,7 @@
 ---
 article: true
 title: Word文档格式教程
-cover: http://pic.puremcs.top/i/2025/07/10/686ebe4e23a68.webp
+cover: computer/assets/686ebe4e23a68.webp
 ---
 
 > [!warning]
