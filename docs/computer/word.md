@@ -1,7 +1,7 @@
 ---
 article: true
 title: Word文档格式教程
-cover: computer/assets/686ebe4e23a68.webp
+cover: /assets/images/cover-word文档格式教程.webp
 ---
 
 > [!warning]

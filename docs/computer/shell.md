@@ -1,7 +1,7 @@
 ---
 article: true
 title: Linux命令教程
-cover: computer/assets/686ba75c03ad2.png
+cover: /assets/images/cover-shell.png
 ---
 
 > [!warning]

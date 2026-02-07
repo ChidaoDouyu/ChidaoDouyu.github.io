@@ -1,7 +1,7 @@
 ---
 article: true
 title: AI大模型翻译Ren'py游戏流程
-cover: code/assets/6876cb9a5afd1.jpg
+cover: /assets/images/cover-renpy_ai_translation.jpg
 order: -1
 ---
 

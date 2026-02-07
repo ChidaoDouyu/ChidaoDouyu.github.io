@@ -1,7 +1,7 @@
 ---
 article: true
 title: 占星笔记
-cover: other/assets/686ebe6ac3c4b.jpg
+cover: /assets/images/cover-planet.jpg
 ---
 
 > [!warning]
