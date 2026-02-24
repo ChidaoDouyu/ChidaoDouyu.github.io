@@ -142,8 +142,6 @@ export default hopeTheme({
         // share组件配置
         share: {services: ['qq', 'weibo', 'facebook', 'twitter', 'reddit', 'pinterest', 'snapchat', 'tumblr', 'telegram', 'whatsapp', 'line', 'linkedin', 'douban', 'buffer', 'wordpress', 'flipboard', 'evernote', 'qrcode', 'email', 'messenger', 'sms']}
       }
-    },
-
-    photoSwipe: false, // 关闭图片浏览
+    }
   },
 });
