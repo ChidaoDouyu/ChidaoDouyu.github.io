@@ -777,3 +777,36 @@ def is_prime(n):
             return False
     return True
 ```
+
+## 一些案例
+### 打印九九乘法表
+```py
+line = 1
+while line <= 9:
+    col = 1
+    while col <= line:
+        print(f'{col}*{line}={col*line}', end = ' ')
+        col += 1
+    print()
+    line += 1
+```
+
+### 验证账户密码
+```py
+ac = {'admin': '123456'}
+u_ac = input('请输入账号名: ')
+access = False
+while 1:
+    if u_ac in ac.keys():
+        if input('请输入密码: ') == ac[u_ac]:
+            access = True
+            break
+        else:
+            print('密码错误! ')
+            continue
+    else:
+        print('账号不存在! 请重新输入')
+        continue
+if access:
+    print(f'欢迎！{u_ac}')
+```
