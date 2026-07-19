@@ -8,9 +8,7 @@ title: 验机教程
 <!-- more -->
 
 # 提前准备U盘
-0. 准备U盘
-[软件包下载](http://xz.puremcs.top/chfs/shared/CheckNewApps.zip)
-[图吧工具箱2025下载](http://xz.puremcs.top/chfs/shared/%E5%9B%BE%E5%90%A7%E5%B7%A5%E5%85%B7%E7%AE%B12025.rar)
+0. 准备U盘，需包含：图吧工具箱
 [memtest86安装部署教程](memtest86.md)
 
 # 启动时跳过联网

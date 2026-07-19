@@ -8,9 +8,8 @@ This article told you how to check the new PC after get it.
 <!-- more -->
 
 # Prepare the USB flash disk first
-0. Prepare (Only provide Chinese version)
-[Download the Software(Chinese)](http://xz.puremcs.top/chfs/shared/CheckNewApps.zip)
-[Download Tu Bar Tool Box 2025(Chinese)](http://xz.puremcs.top/chfs/shared/%E5%9B%BE%E5%90%A7%E5%B7%A5%E5%85%B7%E7%AE%B12025.rar)
+0. Prepare movable disk (Only provide Chinese version)
+Tu Bar Tool Box (Chinese)
 [How to Set Memtest86](memtest86.md)
 
 # Skip connecting the LAN when started

@@ -7,7 +7,7 @@ title: 从零开始：Lsky图床配合Alist实现图片上云
 
 > [!caution]
 > 经实测，该流程存在无法调取图片的问题。
-> 编写者已弃用该方法，留存仅供参考。
+> 编者已弃用该方法，留存仅供参考。
 
 > [!warning]
 > 本教程仅引导用户完成图片上云以及保证图片可见性。
@@ -59,7 +59,7 @@ Alist是一款网盘列表软件。可用于代理网盘，建立本地与网盘
 0. 提前下载nginx
 1. 打开/etc/nginx/nginx.json
 2. 在http框内添加以下内容
-```
+```json
     #Lsky Pro | Image Hub
     server {
         listen 80;
